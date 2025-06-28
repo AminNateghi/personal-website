@@ -1,0 +1,91 @@
+[
+  {
+    "title": "PoolPal™ Corp.",
+    "type": "Full-time | Remote",
+    "date": "Feb 2023 — Present",
+    "description": "This company specializes in the maintenance and monitoring of commercial and institutional swimming pools. This project involved the development of a comprehensive system, encompassing both administrative and customer-facing functionalities. Each section underwent independent design and implementation, ensuring a tailored and optimized user experience for both internal staff and external clients.",
+    "tags": [
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Ant Design",
+      "SVG Animation",
+      "Axios",
+      "Jotai",
+      "Yup"
+    ]
+  },
+  {
+    "title": "Peekage",
+    "type": "Full-time | Remote",
+    "date": "Jun 2022 — 2023",
+    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior.Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "tags": [
+      "NestJS",
+      "TypeScript",
+      "REST APIs",
+      "Microservice",
+      "Nuxt",
+      "Vue",
+      "Postgres",
+      "GraphQL"
+    ]
+  },
+  {
+    "title": "Righcar Corp.",
+    "type": "Full-time | Remote",
+    "date": "Sep 2020 — May 2022",
+    "description": "This company offers smart car solutions and one of its products is a car diagnostic dongle for personal use. In order to manage information, an admin panel was needed, which managed users with a large volume of data and parameters sent from the dongle. In this project, I was the only member of the front-end team and I implemented the structures related to the admin panel. With the construction of this department, managers and sales experts were aware of the performance of dongles sold.",
+    "tags": [
+      "Angular",
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Angular Material"
+    ]
+  },
+  {
+    "title": "Caring Connected Car Solution",
+    "type": "Full-time | On-site",
+    "date": "Dec 2018 — Sep 2020",
+    "description": "Here we were providing solutions for connected cars, our team consisted of hardware experts, software developers and user interface designers. As a front-end developer, I was developing the necessary tools with my colleagues in this company.",
+    "tags": [
+      "Angular",
+      "TypeScript",
+      "REST APIs",
+      "Angular Material",
+      "Leaflet",
+      "C#",
+      "MSSQL"
+    ]
+  },
+  {
+    "title": "Andisheh Co.",
+    "type": "Full-time | On-site",
+    "date": "Oct 2016 — Sep 2018",
+    "description": "The company worked on security solutions for web applications. At first I worked as a front-end developer using DevExpress components for winform desktop applications. Then I started developing in C# for back-end aspects of company applications.",
+    "tags": [
+      "C#",
+      "ReactJS",
+      "REST APIs",
+      "MSSQL",
+      "SQLite",
+      "DevExpress",
+      "WinForm"
+    ]
+  },
+  {
+    "title": "Arttem Studio",
+    "type": "Part-time | On-site",
+    "date": "Mar 2015 — Feb 2016",
+    "description": "At this company, I designed clients websites using WordPress.",
+    "tags": ["WordPress", "JavaScript", "Illustrator", "Photoshop"]
+  },
+  {
+    "title": "DPCO Group",
+    "type": "Full-time | On-site",
+    "date": "Mar 2014 — Feb 2015",
+    "description": "We were working on the product of this company called Hubco Network, which is a product price inquiry service.",
+    "tags": ["C#", "MSSQL", "ASP.Net MVC"]
+  }
+]

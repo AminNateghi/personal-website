@@ -1,0 +1,181 @@
+---
+import IconGitHub from "../../assets/images/icon-github.svg";
+import IconLinkedin from "../../assets/images/icon-linkedin.svg";
+---
+
+<aside class="sidebar" data-sidebar>
+  <div class="sidebar-info">
+    <figure class="avatar-box">
+      <img src="assets/my-avatar.png" alt="😊" width="120" height="120"/>
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name">Amin Nateghi</h1>
+      <p class="title">Web developer</p>
+    </div>
+  </div>
+
+  <div class="sidebar-info_more">
+    <ul class="sidebar-list">
+      <li class="sidebar-item">
+        <div class="icon-box">
+          <IconGitHub />
+        </div>
+
+        <div class="contact-info">
+          <p class="title">GitHub</p>
+          <a href="https://github.com/AminNateghi" target="_blank" class="link"
+            >github.com/AminNateghi</a
+          >
+        </div>
+      </li>
+
+      <li class="sidebar-item">
+        <div class="icon-box">
+          <IconLinkedin />
+        </div>
+
+        <div class="contact-info">
+          <p class="title">LinkedIn</p>
+          <a
+            href="https://www.linkedin.com/in/amin-nateghi/"
+            target="_blank"
+            class="link">linkedin.com/AminNateghi</a
+          >
+        </div>
+      </li>
+    </ul>
+
+    <div class="made-with">Made with ❤️ By Amin Nateghi</div>
+  </div>
+</aside>
+
+<style lang="scss">
+  .sidebar {
+    background: var(--color-base-300);
+    border-radius: var(--radius-box);
+    padding: 15px;
+    z-index: 1;
+    margin-bottom: 16px;
+
+    .sidebar-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+
+        .title {
+          font-size: 11px;
+        }
+
+        .link {
+          font-size: 14px;
+          color: var(--color-text);
+        }
+      }
+
+      .icon-box {
+        position: relative;
+        background: var(--color-base-200);
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .sidebar-info {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+
+      .avatar-box {
+        width: 150px;
+        border-radius: var(--radius-box);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--color-base-200);
+      }
+
+      .info-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .name {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-size: 22px;
+        }
+        .title {
+          color: var(--color-text);
+          background: var(--color-base-200);
+          font-size: 12px;
+          font-weight: 300;
+          width: max-content;
+          padding: 3px 12px;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .made-with {
+    font-size: 9px;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  @media (min-width: 580px) {
+    .sidebar {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sidebar {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .sidebar {
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+      top: 60px;
+      max-height: max-content;
+      height: 100%;
+      margin-bottom: 0;
+      padding-top: 60px;
+      z-index: 1;
+    }
+  }
+</style>

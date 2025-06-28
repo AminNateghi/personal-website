@@ -1,0 +1,118 @@
+---
+import DataExperience from "@assets/data/experience.json";
+import IconBook from "@assets/images/icon-book.svg";
+---
+
+<article class="" data-page="resume">
+  <header>
+    <h2 class="article-title">Resume</h2>
+  </header>
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <IconBook />
+      </div>
+
+      <h3>Experience</h3>
+    </div>
+
+    <ol class="timeline-list">
+      {
+        DataExperience.map((experience) => (
+          <li class="timeline-item">
+            <h4 class="timeline-item-title">{experience.title}</h4>
+
+            <span>{experience.date} | {experience.type}</span>
+
+            <p class="timeline-text">{experience.description}</p>
+
+            <div class="tags">
+              {experience.tags?.map((tag) => (
+                <div class="tag">{tag}</div>
+              ))}
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+</article>
+
+<style lang="scss">
+  .timeline .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+  }
+
+  .timeline-list {
+    font-size: 12px;
+    margin-left: 45px;
+  }
+
+  .timeline-item {
+    position: relative;
+  }
+
+  .timeline-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .timeline-item-title {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 7px;
+  }
+
+  .timeline-list span {
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  .timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 1px;
+    height: calc(100% + 50px);
+    background: var(--color-base-200);
+  }
+
+  .timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -32px;
+    height: 6px;
+    width: 6px;
+    background: var(--color-base-400);
+    border-radius: 20%;
+    box-shadow: 0 0 0 4px var(--color-base-200);
+  }
+
+  .timeline-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .icon-box {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-base-200);
+    border-radius: 10px;
+
+    img {
+      margin: auto;
+    }
+  }
+</style>

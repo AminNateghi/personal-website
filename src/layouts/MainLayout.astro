@@ -1,0 +1,77 @@
+---
+import Nav from "../pages/components/Nav.astro";
+import Modal from "src/pages/components/Modal.astro";
+import SideBar from "../pages/components/SideBar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/my-avatar.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Amin Nateghi - Personal Portfolio</title>
+  </head>
+  <body>
+    <main>
+      <SideBar />
+
+      <div class="main-content">
+        <Nav />
+        <slot />
+      </div>
+    </main>
+    <Modal />
+  </body>
+</html>
+
+<style lang="scss">
+  main {
+    margin: 15px 12px;
+    margin-bottom: 75px;
+    min-width: 259px;
+  }
+
+  @media (min-width: 580px) {
+    main {
+      margin-top: 60px;
+      margin-bottom: 100px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    main {
+      margin-bottom: 60px;
+    }
+
+    .main-content {
+      position: relative;
+      width: max-content;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    main {
+      max-width: 1200px;
+      margin-inline: auto;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 25px;
+    }
+
+    .main-content {
+      min-width: 75%;
+      width: 75%;
+      margin: 0;
+    }
+  }
+</style>

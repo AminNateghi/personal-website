@@ -1,0 +1,65 @@
+<nav class="navbar">
+  <ul class="navbar-list">
+    <li class="navbar-item">
+      <button class="navbar-link active" data-nav-link>About</button>
+    </li>
+
+    <li class="navbar-item">
+      <button class="navbar-link" data-nav-link>Resume</button>
+    </li>
+
+    <li class="navbar-item">
+      <button class="navbar-link" data-nav-link>Portfolio</button>
+    </li>
+  </ul>
+</nav>
+
+<style lang="scss">
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #a08d5881;
+    backdrop-filter: blur(10px);
+    border-radius: 12px 12px 0 0;
+    z-index: 5;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    list-style: none;
+    height: 54px;
+    gap: 20px;
+  }
+
+  .navbar-link {
+    color: var(--color-base-400);
+    transition: color 0.5s ease;
+
+    &.active {
+      color: var(--color-text);
+      border-bottom: 2px solid var(--color-base-400);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .navbar {
+      position: absolute;
+      bottom: auto;
+      top: 0;
+      left: auto;
+      right: 0;
+      width: max-content;
+      border-radius: 0 12px;
+      padding: 0 20px;
+      background: var(--color-base-200);
+    }
+  }
+</style>
+
+<script src="../../assets/scripts/nav.js"></script>

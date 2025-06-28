@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Web Development",
+    "description": "I create modern, high-quality websites designed to engage users and achieve your goals. Expect professional design and seamless functionality.",
+    "icon": "develop"
+  },
+  {
+    "title": "Admin Panel",
+    "description": "I build intuitive, state-of-the-art admin panels that streamline operations. Get powerful control with a modern, user-friendly design.",
+    "icon": "panel"
+  },
+  {
+    "title": "Mobile App",
+    "subTitle": "(PWA)",
+    "description": "I develop cutting-edge PWAs Apps for a native app-like experience in the browser. Expect modern design and robust performance.",
+    "icon": "mobile"
+  }
+]

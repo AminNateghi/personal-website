@@ -1,0 +1,154 @@
+[
+  {
+    "title": "PoolPal Dashboard",
+    "description": "This company specializes in the maintenance and monitoring of commercial and institutional swimming pools. This project involved the development of a comprehensive system, encompassing both administrative and customer-facing functionalities. Each section underwent independent design and implementation, ensuring a tailored and optimized user experience for both internal staff and external clients.",
+    "tags": [
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Ant Design",
+      "SVG Animation",
+      "Axios",
+      "Jotai",
+      "Yup"
+    ],
+    "images": [
+      "assets/project-poolpal-1.jpg",
+      "assets/project-poolpal-2.jpg",
+      "assets/project-poolpal-3.jpg",
+      "assets/project-poolpal-4.jpg",
+      "assets/project-poolpal-5.jpg",
+      "assets/project-poolpal-6.jpg",
+      "assets/project-poolpal-7.jpg",
+      "assets/project-poolpal-8.jpg"
+    ]
+  },
+  {
+    "title": "The Life Guard Dashboard",
+    "description": "This admin panel is for managing lifeguard recruitment and contracts and financial management of payments. Employee management, appointment management, payment management are parts of this program.",
+    "tags": ["ReactJS", "TypeScript", "REST APIs", "Ant Design", "Axios"],
+    "images": [
+      "assets/project-tlc-1.jpg",
+      "assets/project-tlc-2.jpg",
+      "assets/project-tlc-3.jpg",
+      "assets/project-tlc-4.jpg",
+      "assets/project-tlc-5.jpg",
+      "assets/project-tlc-6.jpg",
+      "assets/project-tlc-7.jpg"
+    ]
+  },
+  {
+    "title": "ChatBot PoolPal",
+    "description": "This admin panel is for managing lifeguard recruitment and contracts and financial management of payments. Employee management, appointment management, payment management are parts of this program.",
+    "tags": ["ReactJS", "TypeScript", "REST APIs", "Tailwind", "Axios", "Yup"],
+    "images": [
+      "assets/project-chatbot-1.jpg",
+      "assets/project-chatbot-2.jpg",
+      "assets/project-chatbot-3.jpg",
+      "assets/project-chatbot-4.jpg",
+      "assets/project-chatbot-5.jpg",
+      "assets/project-chatbot-6.jpg",
+      "assets/project-chatbot-7.jpg"
+    ]
+  },
+  {
+    "title": "Peekage Admin Panel",
+    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "tags": ["Vue", "Nuxt", "GraphQL", "Tailwind", "Yup"],
+    "images": [
+      "assets/project-peekage-1.jpg",
+      "assets/project-peekage-2.jpg",
+      "assets/project-peekage-3.jpg",
+      "assets/project-peekage-4.jpg",
+      "assets/project-peekage-5.jpg"
+    ]
+  },
+  {
+    "title": "Righcar Admin Panel",
+    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "tags": ["Angular", "Angular Material", "REST APIs", "RxJS", "RTL"],
+    "images": [
+      "assets/project-righcar-1.jpg",
+      "assets/project-righcar-2.jpg",
+      "assets/project-righcar-2.jpg"
+    ]
+  },
+  {
+    "title": "Righcar Mobile App",
+    "subTitle": "(PWA)",
+    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "tags": [
+      "Angular",
+      "PWA",
+      "Figma",
+      "Custom Style",
+      "REST APIs",
+      "RxJS",
+      "RTL"
+    ],
+    "imageAsMobile": true,
+    "images": [
+      "assets/project-righcar-pwa-1.jpg",
+      "assets/project-righcar-pwa-2.jpg",
+      "assets/project-righcar-pwa-3.jpg",
+      "assets/project-righcar-pwa-4.jpg",
+      "assets/project-righcar-pwa-5.jpg"
+    ]
+  },
+  {
+    "title": "Righcar Website",
+    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "tags": ["WordPress", "Custom Style", "RTL"],
+    "images": [
+      "assets/project-righcar-site-1.jpg",
+      "assets/project-righcar-site-2.jpg",
+      "assets/project-righcar-site-3.jpg"
+    ]
+  },
+  {
+    "title": "Caring Admin Panel",
+    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "tags": [
+      "Angular",
+      "Angular Material",
+      "REST APIs",
+      "LeafletJS",
+      "OpenStreetMap",
+      "RxJS",
+      "RTL"
+    ],
+    "images": []
+  },
+  {
+    "title": "Patient Document Management",
+    "description": "Patient Document Management software was used to archive and manage medical records, including doctor visits, medications, radiology images, and patient records. Using this program reduced the volume of paper in the hospital and made it easier for doctors to access patient records.",
+    "tags": [
+      "Angular",
+      "Angular Material",
+      "REST APIs",
+      "Bootstrap",
+      "DevExtreme",
+      "RxJS",
+      "RTL"
+    ],
+    "images": []
+  },
+  {
+    "title": "Aram Hospital",
+    "description": "Aram Hospital, with its specialized clinics, needed to manage all of its equipment. Using this program, it was possible to manage and maintain the hospital's equipment. This program made it possible to be aware of periodic equipment services and reduce repair costs.",
+    "tags": ["Angular", "Ionic", "REST APIs", "ChartJS", "RxJS", "RTL"],
+    "images": [
+      "assets/project-aram-1.jpg",
+      "assets/project-aram-5.jpg",
+      "assets/project-aram-2.jpg",
+      "assets/project-aram-3.jpg",
+      "assets/project-aram-4.jpg"
+    ]
+  },
+  {
+    "title": "Chaartaar",
+    "subTitle": "(Music Band)",
+    "description": "Chaartaar is a Persian fusion of electronic music combined with Persian vocal music.",
+    "tags": ["WordPress", "Photoshop", "JavaScript", "JQuery", "LTR/RTL"]
+  }
+]
