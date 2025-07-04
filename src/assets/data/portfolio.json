@@ -106,6 +106,18 @@
     ]
   },
   {
+    "title": "Aram Hospital",
+    "description": "Aram Hospital, with its specialized clinics, needed to manage all of its equipment. Using this program, it was possible to manage and maintain the hospital's equipment. This program made it possible to be aware of periodic equipment services and reduce repair costs.",
+    "tags": ["Angular", "Ionic", "REST APIs", "ChartJS", "RxJS", "RTL"],
+    "images": [
+      "assets/project-aram-1.jpg",
+      "assets/project-aram-5.jpg",
+      "assets/project-aram-2.jpg",
+      "assets/project-aram-3.jpg",
+      "assets/project-aram-4.jpg"
+    ]
+  },
+  {
     "title": "Caring Admin Panel",
     "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
     "tags": [
@@ -132,18 +144,6 @@
       "RTL"
     ],
     "images": []
-  },
-  {
-    "title": "Aram Hospital",
-    "description": "Aram Hospital, with its specialized clinics, needed to manage all of its equipment. Using this program, it was possible to manage and maintain the hospital's equipment. This program made it possible to be aware of periodic equipment services and reduce repair costs.",
-    "tags": ["Angular", "Ionic", "REST APIs", "ChartJS", "RxJS", "RTL"],
-    "images": [
-      "assets/project-aram-1.jpg",
-      "assets/project-aram-5.jpg",
-      "assets/project-aram-2.jpg",
-      "assets/project-aram-3.jpg",
-      "assets/project-aram-4.jpg"
-    ]
   },
   {
     "title": "Chaartaar",
