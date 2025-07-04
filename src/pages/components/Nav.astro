@@ -1,3 +1,8 @@
+---
+import IconMoon from "@assets/images/icon-moon.svg";
+import IconSun from "@assets/images/icon-sun.svg";
+---
+
 <nav class="navbar">
   <ul class="navbar-list">
     <li class="navbar-item">
@@ -11,6 +16,13 @@
     <li class="navbar-item">
       <button class="navbar-link" data-nav-link>Portfolio</button>
     </li>
+
+    <li>
+      <button id="toggleTheme">
+        <div id="iconSun" class="theme-icon"><IconSun /></div>
+        <div id="iconMoon" class="theme-icon"><IconMoon /></div>
+      </button>
+    </li>
   </ul>
 </nav>
 
@@ -20,7 +32,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #a08d5881;
+    background: var(--color-bg-nav);
     backdrop-filter: blur(10px);
     border-radius: 12px 12px 0 0;
     z-index: 5;
@@ -38,13 +50,23 @@
   }
 
   .navbar-link {
-    color: var(--color-base-400);
+    color: var(--color-black-200);
     transition: color 0.5s ease;
 
     &.active {
       color: var(--color-text);
       border-bottom: 2px solid var(--color-base-400);
     }
+  }
+
+  .theme-icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+  }
+
+  .theme-icon.active {
+    display: block;
   }
 
   @media (min-width: 1024px) {

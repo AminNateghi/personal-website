@@ -1,11 +1,12 @@
-* {
+:root {
   --color-base-100: #ece3ca;
   --color-base-200: #e4d8b4;
   --color-base-300: #dbca9b;
   --color-base-400: #a08d58;
   --color-black-200: #2b2b2c;
   --color-text: #793205;
-  --color-active: #d08700;
+  --color-active: #a46a00;
+  --color-bg-nav: #796a4383;
   --radius-box: 12px;
 
   margin: 0;
@@ -61,6 +62,20 @@ body {
   font-weight: 400;
   font-variation-settings: "wdth" 100;
   overflow-y: scroll;
+}
+
+body[class="dark-mode"] {
+  --color-base-100: #1d232a;
+  --color-base-200: #242930;
+  --color-base-300: #131517;
+  --color-base-400: #000000;
+  --color-black-200: #878787;
+  --color-text: #c7cacf;
+  --color-active: #d08700;
+  --color-bg-nav: #211f1c83;
+
+  background: var(--color-base-100);
+  color: var(--color-text);
 }
 
 article {

@@ -24,3 +24,11 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm install` | Installs dependencies                       |
 | `pnpm dev`     | Starts local dev server at `localhost:4321` |
 | `pnpm build`   | Build site to `./dist/`                     |
+
+## Icons
+
+All Icons from:
+
+```
+https://www.svgrepo.com/collection/solar-bold-duotone-icons/
+```
