@@ -2,6 +2,7 @@
   {
     "title": "PoolPal Dashboard",
     "description": "This company specializes in the maintenance and monitoring of commercial and institutional swimming pools. This project involved the development of a comprehensive system, encompassing both administrative and customer-facing functionalities. Each section underwent independent design and implementation, ensuring a tailored and optimized user experience for both internal staff and external clients.",
+    "link": "https://app.poolpal.app/",
     "tags": [
       "ReactJS",
       "TypeScript",
@@ -26,6 +27,7 @@
   {
     "title": "The Life Guard Dashboard",
     "description": "This admin panel is for managing lifeguard recruitment and contracts and financial management of payments. Employee management, appointment management, payment management are parts of this program.",
+    "link": "https://guardbase.lifeguardservices.ca/",
     "tags": ["ReactJS", "TypeScript", "REST APIs", "Ant Design", "Axios"],
     "images": [
       "assets/project-tlc-1.jpg",
@@ -54,6 +56,7 @@
   {
     "title": "Peekage Admin Panel",
     "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "link": "https://panel.peekage.app/",
     "tags": ["Vue", "Nuxt", "GraphQL", "Tailwind", "Yup"],
     "images": [
       "assets/project-peekage-1.jpg",
@@ -66,6 +69,7 @@
   {
     "title": "Righcar Admin Panel",
     "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "link": "https://panel.righcar.com/",
     "tags": ["Angular", "Angular Material", "REST APIs", "RxJS", "RTL"],
     "images": [
       "assets/project-righcar-1.jpg",
@@ -77,6 +81,7 @@
     "title": "Righcar Mobile App",
     "subTitle": "(PWA)",
     "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "link": "https://app.righcar.com/",
     "tags": [
       "Angular",
       "PWA",
@@ -98,6 +103,7 @@
   {
     "title": "Righcar Website",
     "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "link": "https://www.righcar.com/",
     "tags": ["WordPress", "Custom Style", "RTL"],
     "images": [
       "assets/project-righcar-site-1.jpg",
@@ -108,6 +114,7 @@
   {
     "title": "Aram Hospital",
     "description": "Aram Hospital, with its specialized clinics, needed to manage all of its equipment. Using this program, it was possible to manage and maintain the hospital's equipment. This program made it possible to be aware of periodic equipment services and reduce repair costs.",
+    "link": "https://behpu.aramhospital.ir/",
     "tags": ["Angular", "Ionic", "REST APIs", "ChartJS", "RxJS", "RTL"],
     "images": [
       "assets/project-aram-1.jpg",
@@ -120,6 +127,7 @@
   {
     "title": "Caring Admin Panel",
     "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "link": "http://panel.caring.ir/",
     "tags": [
       "Angular",
       "Angular Material",
@@ -149,6 +157,7 @@
     "title": "Chaartaar",
     "subTitle": "(Music Band)",
     "description": "Chaartaar is a Persian fusion of electronic music combined with Persian vocal music.",
+    "link": "https://www.chaartaar.com/",
     "tags": ["WordPress", "Photoshop", "JavaScript", "JQuery", "LTR/RTL"]
   }
 ]
