@@ -10,10 +10,11 @@ import IconLink from "@assets/images/icon-link.svg";
 
   {
     DataProject.map((project) => (
-      <div class="project-section"> 
+      <div class="project-section">
         <div class="content">
           <h3 class="title">
-            {project.title} {project.subTitle ? <small>{project.subTitle}</small> : null}
+            {project.title}{" "}
+            {project.subTitle ? <small>{project.subTitle}</small> : null}
           </h3>
           <p>{project.description}</p>
         </div>
@@ -33,11 +34,18 @@ import IconLink from "@assets/images/icon-link.svg";
         <div class="project-images">
           {project.images?.map((image) => (
             <div data-project-item>
-              <img loading="lazy" class={project.imageAsMobile ? 'image-as-mobile' : null} src={image} width="150" alt='🖼️' data-project-image/>
+              <img
+                loading="lazy"
+                class={project.imageAsMobile ? "image-as-mobile" : null}
+                src={image}
+                width="150"
+                alt="🖼️"
+                data-project-image
+              />
             </div>
           ))}
         </div>
-      </div> /* Closing div for project-section */
+      </div>
     ))
   }
 </article>
@@ -59,9 +67,8 @@ import IconLink from "@assets/images/icon-link.svg";
         line-height: 1.6;
       }
     }
-
   }
-  .project-link{
+  .project-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,8 +80,8 @@ import IconLink from "@assets/images/icon-link.svg";
     border-radius: var(--radius-box);
     color: var(--text-active);
     font-size: 14px;
-    
-    &:hover{
+
+    &:hover {
       background-color: var(--color-base-100);
     }
   }
@@ -85,7 +92,7 @@ import IconLink from "@assets/images/icon-link.svg";
     flex-wrap: wrap;
     gap: 10px;
 
-    .image-as-mobile{
+    .image-as-mobile {
       width: 80px;
       height: 142px;
       background-color: var(--color-base-400);
@@ -100,7 +107,7 @@ import IconLink from "@assets/images/icon-link.svg";
       width: 150px;
       height: 74px;
 
-      &:hover{
+      &:hover {
         filter: none;
       }
     }
