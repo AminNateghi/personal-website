@@ -1,43 +1,48 @@
 ---
 import DataExperience from "@assets/data/experience.json";
 import IconBook from "@assets/images/icon-book.svg";
+import MainLayout from "@layouts/MainLayout.astro";
 ---
 
-<article class="" data-page="resume">
-  <header>
-    <h2 class="article-title">Resume</h2>
-  </header>
+<MainLayout>
+  <article data-page="resume">
+    <header>
+      <h2 class="article-title">Resume</h2>
+    </header>
 
-  <section class="timeline">
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <IconBook />
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <IconBook />
+        </div>
+
+        <h3>Experience</h3>
       </div>
 
-      <h3>Experience</h3>
-    </div>
+      <ol class="timeline-list">
+        {
+          DataExperience.map((experience) => (
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">{experience.title}</h4>
 
-    <ol class="timeline-list">
-      {
-        DataExperience.map((experience) => (
-          <li class="timeline-item">
-            <h4 class="timeline-item-title">{experience.title}</h4>
+              <span>
+                {experience.date} | {experience.type}
+              </span>
 
-            <span>{experience.date} | {experience.type}</span>
+              <p class="timeline-text">{experience.description}</p>
 
-            <p class="timeline-text">{experience.description}</p>
-
-            <div class="tags">
-              {experience.tags?.map((tag) => (
-                <div class="tag">{tag}</div>
-              ))}
-            </div>
-          </li>
-        ))
-      }
-    </ol>
-  </section>
-</article>
+              <div class="tags">
+                {experience.tags?.map((tag) => (
+                  <div class="tag">{tag}</div>
+                ))}
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+  </article>
+</MainLayout>
 
 <style lang="scss">
   .timeline .title-wrapper {

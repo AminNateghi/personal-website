@@ -1,12 +1,21 @@
 ---
-import IconGitHub from "../../assets/images/icon-github.svg";
-import IconLinkedin from "../../assets/images/icon-linkedin.svg";
+import { Image } from "astro:assets";
+import IconGitHub from "@assets/images/icon-github.svg";
+import IconLinkedin from "@assets/images/icon-linkedin.svg";
 ---
 
 <aside class="sidebar" data-sidebar>
   <div class="sidebar-info">
     <figure class="avatar-box">
-      <img src="assets/my-avatar.png" alt="😊" width="120" height="120"/>
+      <Image
+        src={{
+          src: "/assets/my-avatar.png",
+          format: "png",
+          width: 120,
+          height: 120,
+        }}
+        alt={"😊"}
+      />
     </figure>
 
     <div class="info-content">

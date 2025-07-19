@@ -1,18 +1,201 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
-import About from "./components/ArticleAbout.astro";
-import Portfolio from "./components/ArticlePortfolio.astro";
-import Resume from "./components/ArticleResume.astro";
-import "../assets/styles/style.scss";
+import IconMobile from "@assets/images/icon-mobile.svg";
+import IconDevelop from "@assets/images/icon-edit.svg";
+import IconPanel from "@assets/images/icon-monitor.svg";
+import DataSkill from "@assets/data/skill.json";
+import DataService from "@assets/data/service.json";
+import MainLayout from "@layouts/MainLayout.astro";
+
+type IconComponent = typeof IconMobile;
+
+function getIconComponent(name: string): IconComponent | null {
+  switch (name) {
+    case "mobile":
+      return IconMobile;
+    case "develop":
+      return IconDevelop;
+    case "panel":
+      return IconPanel;
+    default:
+      return null;
+  }
+}
 ---
 
 <MainLayout>
-  <About />
-  <Resume />
-  <Portfolio />
+  <article data-page="about">
+    <header>
+      <h2 class="article-title">About me</h2>
+    </header>
+
+    <section class="about-text">
+      <p>
+        As a seasoned <strong>front-end developer</strong>, with robust <strong
+          >back-end experience</strong
+        >, I specialize in crafting intuitive and high-performing web solutions,
+        particularly admin panels. My passion lies in transforming intricate
+        challenges into elegantly simple and visually appealing designs. I am
+        dedicated to building <strong>websites</strong> and <strong
+          >admin panels</strong
+        > that are not only practical and efficient but also deliver exceptional
+        user experiences.
+      </p>
+
+      <p class="mt">
+        I leverage cutting-edge frameworks and technologies such as <strong
+          >React, Vue, and Angular</strong
+        > to develop bespoke admin panels tailored precisely to client needs. My
+        expertise extends to a comprehensive tech stack, including <strong
+          >Nuxt, Astro, TypeScript, NestJS, Prisma, GraphQL, Postgres, MSSQL and
+          Git</strong
+        >. With a proven track record of delivering successful web design and
+        admin panel projects for diverse companies, I am adept at creating
+        seamless and scalable digital products.
+      </p>
+    </section>
+
+    <h3 class="mt">What i'm doing</h3>
+
+    <ul class="service-list">
+      {
+        DataService.map((item) => {
+          const Icon = getIconComponent(item.icon);
+
+          return (
+            <li class="item">
+              <div class="icon-box"> {Icon && <Icon />}</div>
+
+              <div class="content-box">
+                <h4 class="item-title">
+                  {item.title}{" "}
+                  {item.subTitle ? <small>{item.subTitle}</small> : null}
+                </h4>
+
+                <p class="item-text">{item.description}</p>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ul>
+
+    <h3 class="mt">What I know</h3>
+
+    <ul class="skill-list">
+      {
+        DataSkill.map((item) => (
+          <li class="item">
+            <h4 class="title">{item}</h4>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
 </MainLayout>
 
-<!--
-Made with ❤️ By: Amin Nateghi
-https://www.linkedin.com/in/amin-nateghi/
--->
+<style lang="scss">
+  .mt {
+    margin-top: 26px;
+  }
+
+  .service-list {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+
+    .item {
+      position: relative;
+      padding: 20px;
+      border-radius: 14px;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        background: var(--color-base-200);
+        border-radius: inherit;
+        z-index: -1;
+      }
+
+      .icon-box {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin: auto;
+        }
+      }
+
+      .content-box {
+        text-align: left;
+
+        .item-title {
+          margin-bottom: 7px;
+        }
+
+        .item-text {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  .skill-list {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .item {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      height: 30px;
+      padding: 0 16px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        background: var(--color-base-200);
+        border-radius: var(--radius-box);
+        z-index: -1;
+      }
+
+      .title {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  @media (min-width: 580px) {
+    .service-list {
+      .item {
+        width: 100%;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .service-list {
+      .item {
+        width: 48%;
+      }
+    }
+  }
+</style>

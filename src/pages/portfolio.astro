@@ -1,0 +1,123 @@
+---
+import { Image } from "astro:assets";
+import DataProject from "@assets/data/portfolio.json";
+import IconLink from "@assets/images/icon-link.svg";
+import MainLayout from "@layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <article data-page="portfolio">
+    <header>
+      <h2 class="article-title">Portfolio</h2>
+    </header>
+
+    {
+      DataProject.map((project) => (
+        <div class="project-section">
+          <div class="content">
+            <h3 class="title">
+              {project.title}{" "}
+              {project.subTitle ? <small>{project.subTitle}</small> : null}
+            </h3>
+            <p>{project.description}</p>
+          </div>
+
+          {project.link && (
+            <a class="project-link" href={project.link} target="_blank">
+              {project.link}
+              <IconLink />
+            </a>
+          )}
+
+          <div class="tags">
+            {project.tags?.map((tag) => (
+              <div class="tag">{tag}</div>
+            ))}
+          </div>
+          <div class="project-images">
+            {project.images?.map((image) => (
+              <div data-project-item>
+                <Image
+                  src={{
+                    src: image,
+                    format: "jpg",
+                    width: project.imageAsMobile ? 500 : 1280,
+                    height: project.imageAsMobile ? 800 : 636,
+                  }}
+                  alt="🖼️"
+                  loading="lazy"
+                  class={project.imageAsMobile ? "image-as-mobile" : null}
+                  data-project-image
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </article>
+</MainLayout>
+
+<style lang="scss">
+  .project-section {
+    .content {
+      .title {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+      }
+
+      p {
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+    }
+  }
+  .project-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--color-base-200);
+    padding: 4px 10px;
+    margin: 5px 0 10px 0;
+    width: fit-content;
+    border-radius: var(--radius-box);
+    color: var(--text-active);
+    font-size: 14px;
+
+    &:hover {
+      background-color: var(--color-base-100);
+    }
+  }
+  .project-images {
+    margin-top: 16px;
+    margin-bottom: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .image-as-mobile {
+      width: 80px;
+      height: 142px;
+      background-color: var(--color-base-400);
+    }
+
+    img {
+      border-radius: var(--radius-box);
+      filter: saturate(10%) opacity(40%);
+      cursor: pointer;
+      transition: filter 0.5s ease;
+      background-color: var(--color-base-400);
+      width: 150px;
+      height: 74px;
+
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+</style>

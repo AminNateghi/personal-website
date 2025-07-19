@@ -79,16 +79,11 @@ body[class="dark-mode"] {
 }
 
 article {
-  display: none;
   background: var(--color-base-300);
   border-radius: var(--radius-box);
   padding: 26px;
   z-index: 1;
-
-  &.active {
-    display: block;
-    animation: fade 0.5s ease backwards;
-  }
+  animation: fade 1s ease backwards;
 }
 
 @keyframes fade {
