@@ -1,8 +1,15 @@
 [
   {
+    "title": "The Lifeguard Company LTD",
+    "type": "Full-time | Remote | Toronto, Ontario, Canada",
+    "date": "Feb 2025 — Present",
+    "description": "Much of the registration and hiring process for a lifeguard was manual and on paper. This process was completely changed by lifeguard management software. All steps of their registration and management were automated, and a large portion of manual costs were eliminated..",
+    "tags": ["ReactJS", "TypeScript", "REST APIs", "Ant Design", "Axios"]
+  },
+  {
     "title": "PoolPal™ Corp.",
-    "type": "Full-time | Remote",
-    "date": "Feb 2023 — Present",
+    "type": "Full-time | Remote | Toronto, Ontario, Canada",
+    "date": "Feb 2023 — Nov 2025",
     "description": "This company specializes in the maintenance and monitoring of commercial and institutional swimming pools. This project involved the development of a comprehensive system, encompassing both administrative and customer-facing functionalities. Each section underwent independent design and implementation, ensuring a tailored and optimized user experience for both internal staff and external clients.",
     "tags": [
       "ReactJS",
@@ -17,7 +24,7 @@
   },
   {
     "title": "Peekage",
-    "type": "Full-time | Remote",
+    "type": "Full-time | Remote | Toronto, Ontario, Canada",
     "date": "Jun 2022 — 2023",
     "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior.Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
     "tags": [

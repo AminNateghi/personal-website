@@ -1,5 +1,20 @@
 [
   {
+    "title": "The Life Guard Dashboard",
+    "description": "This admin panel is for managing lifeguard recruitment and contracts and financial management of payments. Employee management, appointment management, payment management are parts of this program.",
+    "link": "https://guardbase.lifeguardservices.ca/",
+    "tags": ["ReactJS", "TypeScript", "REST APIs", "Ant Design", "Axios"],
+    "images": [
+      "assets/project-tlc-1.jpg",
+      "assets/project-tlc-2.jpg",
+      "assets/project-tlc-3.jpg",
+      "assets/project-tlc-4.jpg",
+      "assets/project-tlc-5.jpg",
+      "assets/project-tlc-6.jpg",
+      "assets/project-tlc-7.jpg"
+    ]
+  },
+  {
     "title": "PoolPal Dashboard",
     "description": "This company specializes in the maintenance and monitoring of commercial and institutional swimming pools. This project involved the development of a comprehensive system, encompassing both administrative and customer-facing functionalities. Each section underwent independent design and implementation, ensuring a tailored and optimized user experience for both internal staff and external clients.",
     "link": "https://app.poolpal.app/",
@@ -22,21 +37,6 @@
       "assets/project-poolpal-6.jpg",
       "assets/project-poolpal-7.jpg",
       "assets/project-poolpal-8.jpg"
-    ]
-  },
-  {
-    "title": "The Life Guard Dashboard",
-    "description": "This admin panel is for managing lifeguard recruitment and contracts and financial management of payments. Employee management, appointment management, payment management are parts of this program.",
-    "link": "https://guardbase.lifeguardservices.ca/",
-    "tags": ["ReactJS", "TypeScript", "REST APIs", "Ant Design", "Axios"],
-    "images": [
-      "assets/project-tlc-1.jpg",
-      "assets/project-tlc-2.jpg",
-      "assets/project-tlc-3.jpg",
-      "assets/project-tlc-4.jpg",
-      "assets/project-tlc-5.jpg",
-      "assets/project-tlc-6.jpg",
-      "assets/project-tlc-7.jpg"
     ]
   },
   {
