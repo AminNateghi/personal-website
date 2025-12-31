@@ -199,3 +199,81 @@ article {
 .modal-close-btn:focus {
   opacity: 1;
 }
+
+/* slider styles inside modal */
+.modal .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+  width: 90vw;
+  max-width: 900px;
+  overflow: hidden;
+  max-height: 85vh;
+  border-radius: 12px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text);
+  background: var(--color-base-400);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.55;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+@media (max-width: 640px) {
+  .slider {
+    width: 95vw;
+  }
+  .slider-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
