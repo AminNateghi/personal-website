@@ -1,5 +1,9 @@
 # Amin Nateghi - Personal Website
 
+This repository contains the source code for my personal website. Built with Astro, the site features both light and dark mode support. I've also implemented a custom Aurora background effect, which can be toggled on or off according to your preference.
+
+You can view the live site at: [https://nateghi.xyz/]
+
 ## Project Structure
 
 Inside of my site, you'll see the following folders and files:
