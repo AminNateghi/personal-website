@@ -1,18 +1,24 @@
 ---
 import { Image } from "astro:assets";
 import DataProject from "@assets/data/portfolio.json";
+import DataProjectFa from "@assets/data/portfolio.fa.json";
 import IconLink from "@assets/images/icon-link.svg";
 import MainLayout from "@layouts/MainLayout.astro";
+import { getLocaleFromUrl, useTranslations } from "@i18n/utils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const projectData = locale === "fa" ? DataProjectFa : DataProject;
 ---
 
 <MainLayout>
   <article data-page="portfolio">
     <header>
-      <h2 class="article-title">Portfolio</h2>
+      <h2 class="article-title">{t("portfolio.title")}</h2>
     </header>
 
     {
-      DataProject.map((project) => (
+      projectData.map((project) => (
         <div class="project-section">
           <div class="content">
             <h3 class="title">
@@ -69,13 +75,14 @@ import MainLayout from "@layouts/MainLayout.astro";
       }
 
       p {
-        margin-top: 16px;
+        margin-top: 5px;
         font-size: 14px;
         font-weight: 400;
         line-height: 1.6;
       }
     }
   }
+
   .project-link {
     display: flex;
     align-items: center;
@@ -93,6 +100,7 @@ import MainLayout from "@layouts/MainLayout.astro";
       background-color: var(--color-base-100);
     }
   }
+
   .project-images {
     margin-top: 16px;
     margin-bottom: 36px;
@@ -118,6 +126,13 @@ import MainLayout from "@layouts/MainLayout.astro";
       &:hover {
         filter: none;
       }
+    }
+  }
+
+  html[dir="rtl"] {
+    .project-link {
+      direction: ltr !important;
+      font-family: "Noto Sans Display", sans-serif;
     }
   }
 </style>

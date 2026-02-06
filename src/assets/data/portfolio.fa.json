@@ -1,0 +1,202 @@
+[
+  {
+    "title": "یادلی - Yadli",
+    "description": "صفر تا صد این پروژه توسط خودم توسعه داده شده و کمتر از یک سال در زمان‌های آزاد روی آن کار کردم. یادلی اپلیکیشنی برای ثبت کیلومتر، مصرف و هزینه سوخت است. با این برنامه می‌توانید هزینه‌های خودرو، سرویس‌ها، سوخت‌گیری‌ها، مصرف کارکرد و قیمت بنزین را پیگیری کنید. این یک اپلیکیشن چندزبانه با پشتیبانی انگلیسی و فارسی است و به صورت PWA توسعه داده شده تا تجربه موبایلی روانی ارائه دهد. استفاده از این اپلیکیشن رایگان است.",
+    "link": "https://yad.li/",
+    "tags": [
+      "Nest",
+      "Postgres",
+      "NX",
+      "Prisma",
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Ant Design",
+      "ky",
+      "i18n",
+      "RTL"
+    ],
+    "imageAsMobile": true,
+    "images": [
+      "assets/project-yadli-en-1.png",
+      "assets/project-yadli-en-2.png",
+      "assets/project-yadli-en-3.png",
+      "assets/project-yadli-en-4.png",
+      "assets/project-yadli-en-5.png",
+      "assets/project-yadli-en-6.png",
+      "assets/project-yadli-en-7.png",
+      "assets/project-yadli-en-8.png",
+      "assets/project-yadli-en-9.png",
+      "assets/project-yadli-fa-1.png",
+      "assets/project-yadli-fa-3.png",
+      "assets/project-yadli-fa-4.png",
+      "assets/project-yadli-fa-5.png",
+      "assets/project-yadli-fa-6.png",
+      "assets/project-yadli-fa-7.png",
+      "assets/project-yadli-fa-8.png",
+      "assets/project-yadli-fa-9.png",
+      "assets/project-yadli-fa-10.png"
+    ]
+  },
+  {
+    "title": "داشبورد مدیریتی The Life Guard",
+    "description": "این پنل برای مدیریت جذب و قراردادهای نیروهای نجات‌غریق و همچنین مدیریت مالی پرداخت‌ها طراحی شد. مدیریت پرسنل، مدیریت نوبت‌ها و مدیریت پرداخت‌ها، مدیریت قرارداد‌ها از بخش‌های اصلی این برنامه است.",
+    "link": "https://guardbase.lifeguardservices.ca/",
+    "tags": ["ReactJS", "TypeScript", "REST APIs", "Ant Design", "Axios"],
+    "images": [
+      "assets/project-tlc-1.jpg",
+      "assets/project-tlc-2.jpg",
+      "assets/project-tlc-3.jpg",
+      "assets/project-tlc-4.jpg",
+      "assets/project-tlc-5.jpg",
+      "assets/project-tlc-6.jpg",
+      "assets/project-tlc-7.jpg"
+    ]
+  },
+  {
+    "title": "داشبورد مدیریتی PoolPal",
+    "description": "این شرکت در زمینه نگهداری و پایش استخرهای تجاری و سازمانی فعالیت می‌کند. این پروژه شامل توسعه یک سیستم کامل با بخش‌های مدیریتی و کاربری بود. هر بخش به صورت مستقل طراحی و پیاده‌سازی شد تا تجربه‌ای بهینه برای کارکنان داخلی و مشتریان فراهم شود.",
+    "link": "https://app.poolpal.app/",
+    "tags": [
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Ant Design",
+      "SVG Animation",
+      "Axios",
+      "Jotai",
+      "Yup"
+    ],
+    "images": [
+      "assets/project-poolpal-1.jpg",
+      "assets/project-poolpal-2.jpg",
+      "assets/project-poolpal-3.jpg",
+      "assets/project-poolpal-4.jpg",
+      "assets/project-poolpal-5.jpg",
+      "assets/project-poolpal-6.jpg",
+      "assets/project-poolpal-7.jpg",
+      "assets/project-poolpal-8.jpg"
+    ]
+  },
+  {
+    "title": "ChatBot PoolPal",
+    "description": "این پروژه جهت چت بات تخصصی شرکت طراحی شد.",
+    "tags": ["ReactJS", "TypeScript", "REST APIs", "Tailwind", "Axios", "Yup"],
+    "images": [
+      "assets/project-chatbot-1.jpg",
+      "assets/project-chatbot-2.jpg",
+      "assets/project-chatbot-3.jpg",
+      "assets/project-chatbot-4.jpg",
+      "assets/project-chatbot-5.jpg",
+      "assets/project-chatbot-6.jpg",
+      "assets/project-chatbot-7.jpg"
+    ]
+  },
+  {
+    "title": "پنل مدیریتی Peekage",
+    "description": "با Peekage بازاریاب‌ها می‌توانند مخاطبان مشخصی را هدف قرار دهند، ارتباط دوطرفه با مصرف‌کنندگان داشته باشند و براساس رفتار کاربران دوباره هدف‌گذاری کنند. طراحی پنل برای کاربران مارکتینگ، تعریف کمپین‌ها و نمایش میزان بازخورد اولیه از ویژگی‌های این پروژه بود.",
+    "link": "https://panel.peekage.app/",
+    "tags": ["Vue", "Nuxt", "GraphQL", "Tailwind", "Yup"],
+    "images": [
+      "assets/project-peekage-1.jpg",
+      "assets/project-peekage-2.jpg",
+      "assets/project-peekage-3.jpg",
+      "assets/project-peekage-4.jpg",
+      "assets/project-peekage-5.jpg"
+    ]
+  },
+  {
+    "title": "پنل مدیریتی رایکار",
+    "description": "برای مدیریت اطلاعات، به یک پنل مدیریتی نیاز بود که کاربران با حجم زیادی از داده‌ها و پارامترهای ارسالی از دانگل را مدیریت کند. در این پروژه، تنها عضو تیم فرانت‌اند بودم و ساختارهای مربوط به پنل مدیریتی را پیاده‌سازی کردم. با ساخت این بخش، مدیران و کارشناسان فروش از عملکرد دانگل‌های فروخته شده مطلع شدند.",
+    "link": "https://panel.righcar.com/",
+    "tags": ["Angular", "Angular Material", "REST APIs", "RxJS", "RTL"],
+    "images": [
+      "assets/project-righcar-1.jpg",
+      "assets/project-righcar-2.jpg",
+      "assets/project-righcar-2.jpg"
+    ]
+  },
+  {
+    "title": "اپلیکیشن رایکار",
+    "subTitle": "(PWA)",
+    "description": "مشتریانی که دانگل رایکار را داشتند نیاز به نمایش پارامترهای ارسال شده توسط دستگاه بود. هر مشتری بر اساس تعداد خودروی خود میتواند وضعیت عیب یابی خودرو خود را در برنامه ببیند و در صورت نیاز خطا را پاک کند.",
+    "link": "https://app.righcar.com/",
+    "tags": [
+      "Angular",
+      "PWA",
+      "Figma",
+      "Custom Style",
+      "REST APIs",
+      "RxJS",
+      "RTL"
+    ],
+    "imageAsMobile": true,
+    "images": [
+      "assets/project-righcar-pwa-1.jpg",
+      "assets/project-righcar-pwa-2.jpg",
+      "assets/project-righcar-pwa-3.jpg",
+      "assets/project-righcar-pwa-4.jpg",
+      "assets/project-righcar-pwa-5.jpg"
+    ]
+  },
+  {
+    "title": "وبسایت و فروشگاه رایکار",
+    "description": "سایت رایکار جهت نمایش محصولات و مقالات مرتبط به تعمیرات و نگهداری خودرو بوده که در ان مشتریان میتوانند دانگل‌های مختلف رایکار را خریداری کنند.",
+    "link": "https://www.righcar.com/",
+    "tags": ["WordPress", "Custom Style", "RTL"],
+    "images": [
+      "assets/project-righcar-site-1.jpg",
+      "assets/project-righcar-site-2.jpg",
+      "assets/project-righcar-site-3.jpg"
+    ]
+  },
+  {
+    "title": "مدیریت تجهیزات بیمارستان آرام",
+    "description": "بیمارستان آرام با کلینیک‌های تخصصی خود نیاز به مدیریت تجهیزات داشت. با این برنامه امکان مدیریت و نگهداری تجهیزات بیمارستان فراهم شد و با سرویس‌های دوره‌ای، هزینه‌های تعمیر کاهش یافت.",
+    "link": "https://behpu.aramhospital.ir/",
+    "tags": ["Angular", "Ionic", "REST APIs", "ChartJS", "RxJS", "RTL"],
+    "images": [
+      "assets/project-aram-1.jpg",
+      "assets/project-aram-5.jpg",
+      "assets/project-aram-2.jpg",
+      "assets/project-aram-3.jpg",
+      "assets/project-aram-4.jpg"
+    ]
+  },
+  {
+    "title": "پنل مدیریتی کارینگ",
+    "description": "ما در اینجا راهکارهایی برای خودروهای متصل (Connected Cars) ارائه می‌دادیم. تیم ما متشکل از متخصصان سخت‌افزار، توسعه‌دهندگان نرم‌افزار و طراحان رابط کاربری بود. من به عنوان توسعه‌دهنده فرانت‌اِند (Front-end Developer)، در کنار همکارانم در این شرکت، ابزارهای مورد نیاز را توسعه می‌دادم. برخی از فعالیت‌های برجسته ما عبارتند از: توسعه سیستم مدیریت ناوگان (FMS) برای کاربران سازمانی. توسعه اپلیکیشن PWA جهت ارائه خدمات مرتبط با خودرو، از جمله خلافی خودرو (عوارض طرح ترافیک)، عوارض آزادراهی، بیمه خودرو و موارد دیگر.",
+    "link": "http://panel.caring.ir/",
+    "tags": [
+      "Angular",
+      "Angular Material",
+      "REST APIs",
+      "LeafletJS",
+      "OpenStreetMap",
+      "RxJS",
+      "RTL"
+    ],
+    "images": []
+  },
+  {
+    "title": "مدیریت پرونده‌های پزشکی",
+    "description": "این نرم‌افزار برای آرشیو و مدیریت پرونده‌های پزشکی شامل ویزیت‌ها، داروها، تصاویر رادیولوژی و سوابق بیمار توسعه داده شد. این سیستم حجم کاغذبازی را کاهش داد و دسترسی پزشکان به پرونده‌ها را آسان‌تر کرد. ضمنا پروژه در شبکه داخلی بیمارستان پیاده‌سازی گردید.",
+    "tags": [
+      "Angular",
+      "Angular Material",
+      "REST APIs",
+      "Bootstrap",
+      "DevExtreme",
+      "RxJS",
+      "RTL"
+    ],
+    "images": []
+  },
+  {
+    "title": "وبسایت چارتار",
+    "subTitle": "(گروه موسیقی)",
+    "description": "چارتار یک گروه موسیقی ایرانی است که در سال ۱۳۹۰ توسط چهار نفر تشکیل شد، وبسایت این گروه جهت معرفی تک تک اعضا و بیوگرافی آنها بود. همچنین در بخش آلبوم‌ها آخرین تک آهنگ‌ها و آلبوم های منتشر شده گذاشته شده بود که امکان پخش با زیرنویس در آن ایجاد شده بود.",
+    "link": "https://www.chaartaar.com/",
+    "tags": ["WordPress", "Photoshop", "JavaScript", "JQuery", "LTR/RTL"]
+  }
+]

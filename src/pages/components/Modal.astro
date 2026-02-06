@@ -1,5 +1,9 @@
 ---
 import IconClose from "@assets/images/icon-close.svg";
+import { getLocaleFromUrl, useTranslations } from "@i18n/utils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 ---
 
 <div class="modal-container" data-modal-container>
@@ -15,12 +19,18 @@ import IconClose from "@assets/images/icon-close.svg";
         <button
           class="slider-btn prev"
           data-slider-prev
-          aria-label="Previous image">◀</button
+          aria-label={t("modal.prev")}
         >
+          &#9664;
+        </button>
         <div class="slider-track" data-slider-track></div>
-        <button class="slider-btn next" data-slider-next aria-label="Next image"
-          >▶</button
+        <button
+          class="slider-btn next"
+          data-slider-next
+          aria-label={t("modal.next")}
         >
+          &#9654;
+        </button>
       </div>
     </div>
   </section>

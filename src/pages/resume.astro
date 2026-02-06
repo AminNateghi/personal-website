@@ -1,13 +1,19 @@
 ---
 import DataExperience from "@assets/data/experience.json";
+import DataExperienceFa from "@assets/data/experience.fa.json";
 import IconBook from "@assets/images/icon-book.svg";
 import MainLayout from "@layouts/MainLayout.astro";
+import { getLocaleFromUrl, useTranslations } from "@i18n/utils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const experienceData = locale === "fa" ? DataExperienceFa : DataExperience;
 ---
 
 <MainLayout>
   <article data-page="resume">
     <header>
-      <h2 class="article-title">Resume</h2>
+      <h2 class="article-title">{t("resume.title")}</h2>
     </header>
 
     <section class="timeline">
@@ -16,12 +22,12 @@ import MainLayout from "@layouts/MainLayout.astro";
           <IconBook />
         </div>
 
-        <h3>Experience</h3>
+        <h3>{t("resume.experience")}</h3>
       </div>
 
       <ol class="timeline-list">
         {
-          DataExperience.map((experience) => (
+          experienceData.map((experience) => (
             <li class="timeline-item">
               <h4 class="timeline-item-title">{experience.title}</h4>
 
@@ -54,7 +60,7 @@ import MainLayout from "@layouts/MainLayout.astro";
 
   .timeline-list {
     font-size: 12px;
-    margin-left: 45px;
+    margin-left: 50px;
   }
 
   .timeline-item {
@@ -118,6 +124,21 @@ import MainLayout from "@layouts/MainLayout.astro";
 
     img {
       margin: auto;
+    }
+  }
+
+  html[dir="rtl"] {
+    .timeline-list {
+      margin-left: 0;
+      margin-right: 50px;
+    }
+    .timeline-item:not(:last-child)::before {
+      left: auto;
+      right: -30px;
+    }
+    .timeline-item::after {
+      left: auto;
+      right: -32px;
     }
   }
 </style>

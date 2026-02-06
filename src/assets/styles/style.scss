@@ -64,6 +64,15 @@ body {
   overflow-y: scroll;
 }
 
+html[dir="rtl"] {
+  direction: rtl;
+
+  body {
+    font-family: "Vazirmatn", "Noto Sans Display", sans-serif;
+    line-height: normal;
+  }
+}
+
 body[class="dark-mode"] {
   --color-base-100: #1d232a;
   --color-base-200: #242930;
@@ -108,6 +117,8 @@ article {
   margin-top: 4px;
 
   .tag {
+    direction: ltr;
+    font-family: "Noto Sans Display", sans-serif;
     background: var(--color-base-200);
     font-size: 10px;
     padding: 5px 16px;
@@ -118,6 +129,7 @@ article {
 // ======== modal ========
 
 .modal-container {
+  direction: ltr;
   position: fixed;
   top: 0;
   left: 0;

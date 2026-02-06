@@ -3,20 +3,32 @@ import IconMoon from "@assets/images/icon-moon.svg";
 import IconSun from "@assets/images/icon-sun.svg";
 import IconLayers from "@assets/images/icon-layers.svg";
 import IconLayer from "@assets/images/icon-layer.svg";
+import { getLocaleFromUrl, getLocalePath, useTranslations } from "@i18n/utils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const switchLocale = locale === "en" ? "fa" : "en";
+const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
 ---
 
 <nav class="navbar">
   <ul class="navbar-list">
     <li class="navbar-item">
-      <a class="navbar-link" href="/">About</a>
+      <a class="navbar-link" href={getLocalePath("/", locale)}>
+        {t("nav.about")}
+      </a>
     </li>
 
     <li class="navbar-item">
-      <a class="navbar-link" href="/resume/">Resume</a>
+      <a class="navbar-link" href={getLocalePath("/resume/", locale)}>
+        {t("nav.resume")}
+      </a>
     </li>
 
     <li class="navbar-item">
-      <a class="navbar-link" href="/portfolio/">Portfolio</a>
+      <a class="navbar-link" href={getLocalePath("/portfolio/", locale)}>
+        {t("nav.portfolio")}
+      </a>
     </li>
 
     <li>
@@ -30,6 +42,16 @@ import IconLayer from "@assets/images/icon-layer.svg";
         <div id="iconLayers" class="theme-icon"><IconLayers /></div>
         <div id="iconLayer" class="theme-icon"><IconLayer /></div>
       </button>
+    </li>
+    <li>
+      <a
+        id="toggleLanguage"
+        class="navbar-link lang-link"
+        href={switchHref}
+        data-locale={switchLocale}
+      >
+        {switchLocale === "fa" ? t("nav.lang.fa") : t("nav.lang.en")}
+      </a>
     </li>
   </ul>
 </nav>
@@ -81,6 +103,13 @@ import IconLayer from "@assets/images/icon-layer.svg";
     display: block;
   }
 
+  .lang-link {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: var(--color-text);
+  }
+
   @media (min-width: 1024px) {
     .navbar {
       position: absolute;
@@ -92,6 +121,15 @@ import IconLayer from "@assets/images/icon-layer.svg";
       border-radius: 0 12px;
       padding: 0 20px;
       background: var(--color-base-200);
+    }
+
+    html[dir="rtl"] {
+      .navbar {
+        top: 0;
+        left: 0;
+        right: auto;
+        border-radius: 12px 0;
+      }
     }
   }
 </style>

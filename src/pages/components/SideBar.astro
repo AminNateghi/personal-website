@@ -2,6 +2,10 @@
 import { Image } from "astro:assets";
 import IconGitHub from "@assets/images/icon-github.svg";
 import IconLinkedin from "@assets/images/icon-linkedin.svg";
+import { getLocaleFromUrl, useTranslations } from "@i18n/utils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 ---
 
 <aside class="sidebar" data-sidebar>
@@ -19,8 +23,8 @@ import IconLinkedin from "@assets/images/icon-linkedin.svg";
     </figure>
 
     <div class="info-content">
-      <h1 class="name">Amin Nateghi</h1>
-      <p class="title">Web developer</p>
+      <h1 class="name">{t("sidebar.myName")}</h1>
+      <p class="title">{t("sidebar.role")}</p>
     </div>
   </div>
 
@@ -32,7 +36,7 @@ import IconLinkedin from "@assets/images/icon-linkedin.svg";
         </div>
 
         <div class="contact-info">
-          <p class="title">GitHub</p>
+          <p class="title">{t("sidebar.github")}</p>
           <a href="https://github.com/AminNateghi" target="_blank" class="link"
             >github.com/AminNateghi</a
           >
@@ -45,7 +49,7 @@ import IconLinkedin from "@assets/images/icon-linkedin.svg";
         </div>
 
         <div class="contact-info">
-          <p class="title">LinkedIn</p>
+          <p class="title">{t("sidebar.linkedin")}</p>
           <a
             href="https://www.linkedin.com/in/amin-nateghi/"
             target="_blank"
@@ -55,7 +59,7 @@ import IconLinkedin from "@assets/images/icon-linkedin.svg";
       </li>
     </ul>
 
-    <div class="made-with">Made with ❤️ By Amin Nateghi</div>
+    <div class="made-with">{t("sidebar.madeWith")}</div>
   </div>
 </aside>
 

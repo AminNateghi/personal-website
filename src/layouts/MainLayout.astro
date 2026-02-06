@@ -3,10 +3,15 @@ import Nav from "@pages/components/Nav.astro";
 import Modal from "@pages/components/Modal.astro";
 import SideBar from "@pages/components/SideBar.astro";
 import Aurora from "@pages/components/Aurora.astro";
+import { getDir, getLocaleFromUrl, useTranslations } from "@i18n/utils";
 import "@assets/styles/style.scss";
+
+const locale = getLocaleFromUrl(Astro.url);
+const dir = getDir(locale);
+const t = useTranslations(locale);
 ---
 
-<html lang="en">
+<html lang={locale} dir={dir}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,11 +25,11 @@ import "@assets/styles/style.scss";
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
-    <title>Amin Nateghi - Personal Portfolio</title>
+    <title>{t("site.title")}</title>
   </head>
   <body>
     <main>
@@ -83,6 +88,8 @@ import "@assets/styles/style.scss";
     }
   }
 </style>
+
+<script src="@assets/scripts/language.js"></script>
 
 <!--
 Made with ❤️ By: Amin Nateghi

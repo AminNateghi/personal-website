@@ -4,9 +4,15 @@ import IconDevelop from "@assets/images/icon-edit.svg";
 import IconPanel from "@assets/images/icon-monitor.svg";
 import DataSkill from "@assets/data/skill.json";
 import DataService from "@assets/data/service.json";
+import DataServiceFa from "@assets/data/service.fa.json";
 import MainLayout from "@layouts/MainLayout.astro";
+import { getLocaleFromUrl, useTranslations } from "@i18n/utils";
 
 type IconComponent = typeof IconMobile;
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const serviceData = locale === "fa" ? DataServiceFa : DataService;
 
 function getIconComponent(name: string): IconComponent | null {
   switch (name) {
@@ -25,40 +31,20 @@ function getIconComponent(name: string): IconComponent | null {
 <MainLayout>
   <article data-page="about">
     <header>
-      <h2 class="article-title">About me</h2>
+      <h2 class="article-title">{t("about.title")}</h2>
     </header>
 
     <section class="about-text">
-      <p>
-        As a seasoned <strong>front-end developer</strong>, with robust <strong
-          >back-end experience</strong
-        >, I specialize in crafting intuitive and high-performing web solutions,
-        particularly admin panels. My passion lies in transforming intricate
-        challenges into elegantly simple and visually appealing designs. I am
-        dedicated to building <strong>websites</strong> and <strong
-          >admin panels</strong
-        > that are not only practical and efficient but also deliver exceptional
-        user experiences.
-      </p>
+      <p>{t("about.p1")}</p>
 
-      <p class="mt">
-        I leverage cutting-edge frameworks and technologies such as <strong
-          >React, Vue, and Angular</strong
-        > to develop bespoke admin panels tailored precisely to client needs. My
-        expertise extends to a comprehensive tech stack, including <strong
-          >Nuxt, Astro, TypeScript, NestJS, Prisma, GraphQL, Postgres, MSSQL and
-          Git</strong
-        >. With a proven track record of delivering successful web design and
-        admin panel projects for diverse companies, I am adept at creating
-        seamless and scalable digital products.
-      </p>
+      <p class="mt">{t("about.p2")}</p>
     </section>
 
-    <h3 class="mt">What i'm doing</h3>
+    <h3 class="mt">{t("about.doing")}</h3>
 
     <ul class="service-list">
       {
-        DataService.map((item) => {
+        serviceData.map((item) => {
           const Icon = getIconComponent(item.icon);
 
           return (
@@ -79,7 +65,7 @@ function getIconComponent(name: string): IconComponent | null {
       }
     </ul>
 
-    <h3 class="mt">What I know</h3>
+    <h3 class="mt">{t("about.skills")}</h3>
 
     <ul class="skill-list">
       {
@@ -140,12 +126,14 @@ function getIconComponent(name: string): IconComponent | null {
 
         .item-title {
           margin-bottom: 7px;
+          text-align: start;
         }
 
         .item-text {
           font-size: 14px;
           font-weight: 300;
           line-height: 1.6;
+          text-align: start;
         }
       }
     }
@@ -195,6 +183,23 @@ function getIconComponent(name: string): IconComponent | null {
     .service-list {
       .item {
         width: 48%;
+      }
+    }
+  }
+
+  html[dir="rtl"] {
+    .service-list {
+      .item {
+        .icon-box {
+          margin-right: 0px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .skill-list {
+      .item {
+        font-family: "Noto Sans Display", sans-serif;
       }
     }
   }

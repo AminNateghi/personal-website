@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const projectImagesContainer = this.closest(".project-images");
       if (!projectImagesContainer) return;
       const imgs = projectImagesContainer.querySelectorAll(
-        "[data-project-image]"
+        "[data-project-image]",
       );
       if (!imgs || imgs.length === 0) return;
 

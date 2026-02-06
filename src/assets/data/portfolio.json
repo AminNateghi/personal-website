@@ -80,7 +80,7 @@
   },
   {
     "title": "ChatBot PoolPal",
-    "description": "This admin panel is for managing lifeguard recruitment and contracts and financial management of payments. Employee management, appointment management, payment management are parts of this program.",
+    "description": "This project was designed as a specialized chatbot for the company.",
     "tags": ["ReactJS", "TypeScript", "REST APIs", "Tailwind", "Axios", "Yup"],
     "images": [
       "assets/project-chatbot-1.jpg",
@@ -107,7 +107,7 @@
   },
   {
     "title": "Righcar Admin Panel",
-    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "description": "In order to manage information, an admin panel was needed, which managed users with a large volume of data and parameters sent from the dongle. In this project, I was the only member of the front-end team and I implemented the structures related to the admin panel. With the construction of this department, managers and sales experts were aware of the performance of dongles sold.",
     "link": "https://panel.righcar.com/",
     "tags": ["Angular", "Angular Material", "REST APIs", "RxJS", "RTL"],
     "images": [
@@ -119,7 +119,7 @@
   {
     "title": "Righcar Mobile App",
     "subTitle": "(PWA)",
-    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "description": "For customers using the Righcar dongle, the application displays real-time parameters transmitted by the device. Depending on the number of vehicles owned, each user can monitor their car's diagnostic status and clear fault codes as needed.",
     "link": "https://app.righcar.com/",
     "tags": [
       "Angular",
@@ -141,7 +141,7 @@
   },
   {
     "title": "Righcar Website",
-    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "description": "The Rightcar website is dedicated to showcasing products and articles related to vehicle maintenance and repair. It serves as an e-commerce platform where customers can purchase various Rightcar dongles.",
     "link": "https://www.righcar.com/",
     "tags": ["WordPress", "Custom Style", "RTL"],
     "images": [
@@ -151,7 +151,7 @@
     ]
   },
   {
-    "title": "Aram Hospital",
+    "title": "Aram Hospital Equipment Management",
     "description": "Aram Hospital, with its specialized clinics, needed to manage all of its equipment. Using this program, it was possible to manage and maintain the hospital's equipment. This program made it possible to be aware of periodic equipment services and reduce repair costs.",
     "link": "https://behpu.aramhospital.ir/",
     "tags": ["Angular", "Ionic", "REST APIs", "ChartJS", "RxJS", "RTL"],
@@ -165,7 +165,7 @@
   },
   {
     "title": "Caring Admin Panel",
-    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "description": "Here we were providing solutions for connected cars, our team consisted of hardware experts, software developers and user interface designers. Collaborated as a Front-end Developer to build the necessary tools with my colleagues in this company. These are some of our significant works: - Develop Fleet Management System (FMS) for enterprise users. - Develop PWA application for providing vehicle related services such as traffic tolls, highway tolls, car insurance and more.",
     "link": "http://panel.caring.ir/",
     "tags": [
       "Angular",
@@ -195,7 +195,7 @@
   {
     "title": "Chaartaar",
     "subTitle": "(Music Band)",
-    "description": "Chaartaar is a Persian fusion of electronic music combined with Persian vocal music.",
+    "description": "Chaartaar is an Iranian music group formed in 2011 by four members. The group's website was designed to introduce each member and share their biographies. Additionally, the albums section featured the latest singles and releases, with a built-in player that supported synchronized lyrics.",
     "link": "https://www.chaartaar.com/",
     "tags": ["WordPress", "Photoshop", "JavaScript", "JQuery", "LTR/RTL"]
   }
