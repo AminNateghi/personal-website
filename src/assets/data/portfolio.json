@@ -1,5 +1,44 @@
 [
   {
+    "title": "Yadli",
+    "description": "I developed and built this project entirely from scratch. I’ve spent about a year working on it during my spare time. Yadli is application to track your mileage, gas consumption and costs. using this app you can track car expenses, auto service, your fill-ups, fuel consumption, car's mileage, cost and gas prices. This is a multilingual application, currently supporting English and Persian. It is developed as a PWA (Progressive Web App) to ensure a seamless mobile experience. This app is free to use.",
+    "link": "https://yad.li/",
+    "tags": [
+      "Nest",
+      "Postgres",
+      "NX",
+      "Prisma",
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Ant Design",
+      "ky",
+      "i18n",
+      "RTL"
+    ],
+    "imageAsMobile": true,
+    "images": [
+      "assets/project-yadli-en-1.png",
+      "assets/project-yadli-en-2.png",
+      "assets/project-yadli-en-3.png",
+      "assets/project-yadli-en-4.png",
+      "assets/project-yadli-en-5.png",
+      "assets/project-yadli-en-6.png",
+      "assets/project-yadli-en-7.png",
+      "assets/project-yadli-en-8.png",
+      "assets/project-yadli-en-9.png",
+      "assets/project-yadli-fa-1.png",
+      "assets/project-yadli-fa-3.png",
+      "assets/project-yadli-fa-4.png",
+      "assets/project-yadli-fa-5.png",
+      "assets/project-yadli-fa-6.png",
+      "assets/project-yadli-fa-7.png",
+      "assets/project-yadli-fa-8.png",
+      "assets/project-yadli-fa-9.png",
+      "assets/project-yadli-fa-10.png"
+    ]
+  },
+  {
     "title": "The Life Guard Dashboard",
     "description": "This admin panel is for managing lifeguard recruitment and contracts and financial management of payments. Employee management, appointment management, payment management are parts of this program.",
     "link": "https://guardbase.lifeguardservices.ca/",
