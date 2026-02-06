@@ -1,6 +1,8 @@
 ---
 import IconMoon from "@assets/images/icon-moon.svg";
 import IconSun from "@assets/images/icon-sun.svg";
+import IconLayers from "@assets/images/icon-layers.svg";
+import IconLayer from "@assets/images/icon-layer.svg";
 ---
 
 <nav class="navbar">
@@ -21,6 +23,12 @@ import IconSun from "@assets/images/icon-sun.svg";
       <button id="toggleTheme">
         <div id="iconSun" class="theme-icon"><IconSun /></div>
         <div id="iconMoon" class="theme-icon"><IconMoon /></div>
+      </button>
+    </li>
+    <li>
+      <button id="toggleAurora">
+        <div id="iconLayers" class="theme-icon"><IconLayers /></div>
+        <div id="iconLayer" class="theme-icon"><IconLayer /></div>
       </button>
     </li>
   </ul>
@@ -59,6 +67,7 @@ import IconSun from "@assets/images/icon-sun.svg";
     }
   }
 
+  #toggleAurora,
   #toggleTheme {
     width: 24px;
     height: 24px;
@@ -88,3 +97,4 @@ import IconSun from "@assets/images/icon-sun.svg";
 </style>
 
 <script src="@assets/scripts/theme.js"></script>
+<script src="@assets/scripts/aurora.js"></script>

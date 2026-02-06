@@ -1,0 +1,105 @@
+<div class="aurora-container">
+  <div class="aurora-canvas">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+</div>
+
+<script></script>
+
+<style>
+  .aurora-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: var(--color-base-300);
+  }
+  .aurora-container.is-hidden {
+    display: none;
+  }
+
+  .aurora-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(60px);
+    opacity: 0.6;
+  }
+
+  .blob {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    animation: move 20s infinite alternate ease-in-out;
+  }
+
+  /* Aurora Colors */
+  .blob-1 {
+    background: radial-gradient(
+      circle,
+      var(--color-base-100) 0%,
+      transparent 70%
+    );
+    top: -10%;
+    left: -10%;
+    animation-duration: 25s;
+  }
+
+  .blob-2 {
+    background: radial-gradient(
+      circle,
+      var(--color-base-200) 0%,
+      transparent 70%
+    );
+    bottom: -10%;
+    right: -10%;
+    animation-duration: 30s;
+    animation-delay: -5s;
+  }
+
+  .blob-3 {
+    background: radial-gradient(
+      circle,
+      var(--color-base-300) 0%,
+      transparent 70%
+    );
+    top: 20%;
+    left: 30%;
+    animation-duration: 22s;
+    animation-delay: -2s;
+  }
+
+  .blob-4 {
+    background: radial-gradient(
+      circle,
+      var(--color-base-400) 0%,
+      transparent 70%
+    );
+    bottom: 10%;
+    left: 10%;
+    animation-duration: 35s;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(10%, 5%) scale(1.1);
+    }
+    66% {
+      transform: translate(-50%, 15%) scale(0.9);
+    }
+    100% {
+      transform: translate(5%, -5%) scale(1);
+    }
+  }
+</style>
