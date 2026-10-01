@@ -12,13 +12,13 @@ function setTheme(isDarkMode) {
   if (isDarkMode) {
     bodyElement.classList.add(DARK_MODE_CLASS);
     localStorage.setItem(THEME_KEY, "dark");
-    iconSun.classList.remove("active");
-    iconMoon.classList.add("active");
+    iconSun.classList.add("active");
+    iconMoon.classList.remove("active");
   } else {
     bodyElement.classList.remove(DARK_MODE_CLASS);
     localStorage.setItem(THEME_KEY, "light");
-    iconSun.classList.add("active");
-    iconMoon.classList.remove("active");
+    iconSun.classList.remove("active");
+    iconMoon.classList.add("active");
   }
 }
 
