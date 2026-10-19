@@ -3,8 +3,14 @@
     "title": "The Lifeguard Company LTD",
     "type": "Full-time | Remote | Toronto, Ontario, Canada",
     "date": "Feb 2025 — Feb 2026",
-    "description": "Much of the registration and hiring process for a lifeguard was manual and on paper. This process was completely changed by lifeguard management software. All steps of their registration and management were automated, and a large portion of manual costs were eliminated..",
-    "tags": ["ReactJS", "TypeScript", "REST APIs", "Ant Design", "Axios"]
+    "description": "Previously, a significant portion of the process—including the registration and recruitment of lifeguards, as well as the management of contracts with organizations—was handled manually using paper-based methods. With the lifeguard management software, this entire workflow has been fully automated. Everything from scheduling interviews and hiring lifeguards to issuing invoices and formalizing contracts with organizations is now automated; this has eliminated many manual-processing costs and accelerated operational outcomes, ultimately removing unnecessary expenses for the company.",
+    "tags": [
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Ant Design",
+      "Axios"
+    ]
   },
   {
     "title": "PoolPal™ Corp.",
@@ -26,7 +32,7 @@
     "title": "Peekage",
     "type": "Full-time | Remote | Toronto, Ontario, Canada",
     "date": "Jun 2022 — Dec 2023",
-    "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior.Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
+    "description": "This company specializes in distributing product test samples to selected customers and gathering feedback on their user experience. The software facilitates the entire process—from the distribution of test samples and the collection of user feedback (via various types of questions) to the generation of reports for manufacturers. It also supports collaboration with marketers to target specific audiences and enables two-way communication with consumers. Key features of the project include a dedicated panel for marketing users, the ability to define campaigns, and the visualization of initial feedback metrics.",
     "tags": [
       "NestJS",
       "TypeScript",
@@ -42,7 +48,7 @@
     "title": "Righcar Corp.",
     "type": "Full-time | Remote",
     "date": "Sep 2020 — May 2022",
-    "description": "This company offers smart car solutions and one of its products is a car diagnostic dongle for personal use. In order to manage information, an admin panel was needed, which managed users with a large volume of data and parameters sent from the dongle. In this project, I was the only member of the front-end team and I implemented the structures related to the admin panel. With the construction of this department, managers and sales experts were aware of the performance of dongles sold.",
+    "description": "This company provides smart automotive solutions, offering, among other products, a vehicle diagnostic dongle for personal use. Managing the data and parameters transmitted by these dongles required a management panel capable of handling high volumes of information. For this project, the entire infrastructure for the panel was built from scratch. With the implementation of this system, managers and sales specialists gained visibility into the performance of the sold dongles. Additionally, a PWA version of the software and the company’s website were developed.",
     "tags": [
       "Angular",
       "ReactJS",
@@ -55,7 +61,7 @@
     "title": "Caring Connected Car Solution",
     "type": "Full-time | On-site",
     "date": "Dec 2018 — Sep 2020",
-    "description": "Here we were providing solutions for connected cars, our team consisted of hardware experts, software developers and user interface designers. As a front-end developer, I was developing the necessary tools with my colleagues in this company.",
+    "description": "This company provided management solutions for corporate vehicle fleets. Its team consisted of hardware specialists, software developers, and user interface designers. As a web developer, I built tools for real-time monitoring and fleet management via a map interface; these included the display of vehicle speed, cabin temperature, real-time location, ECU status, and other relevant details.",
     "tags": [
       "Angular",
       "TypeScript",
@@ -85,14 +91,23 @@
     "title": "Arttem Studio",
     "type": "Part-time | On-site",
     "date": "Mar 2015 — Feb 2016",
-    "description": "At this company, I designed clients websites using WordPress.",
-    "tags": ["WordPress", "JavaScript", "Illustrator", "Photoshop"]
+    "description": "At this company, I designed and implemented client websites using WordPress on a part-time basis.",
+    "tags": [
+      "WordPress",
+      "JavaScript",
+      "Illustrator",
+      "Photoshop"
+    ]
   },
   {
     "title": "DPCO Group",
     "type": "Full-time | On-site",
     "date": "Mar 2014 — Feb 2015",
-    "description": "We were working on the product of this company called Hubco Network, which is a product price inquiry service.",
-    "tags": ["C#", "MSSQL", "ASP.Net MVC"]
+    "description": "The company's product was a supply chain and product inquiry system, in which all of the company's required processes were implemented.",
+    "tags": [
+      "C#",
+      "MSSQL",
+      "ASP.Net MVC"
+    ]
   }
 ]

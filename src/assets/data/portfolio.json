@@ -1,7 +1,7 @@
 [
   {
     "title": "Yadli",
-    "description": "I developed and built this project entirely from scratch. I’ve spent about a year working on it during my spare time. Yadli is application to track your mileage, gas consumption and costs. using this app you can track car expenses, auto service, your fill-ups, fuel consumption, car's mileage, cost and gas prices. This is a multilingual application, currently supporting English and Persian. It is developed as a PWA (Progressive Web App) to ensure a seamless mobile experience. This app is free to use.",
+    "description": "Yadli is an application for tracking mileage, fuel consumption, and fuel costs. With this app, you can monitor vehicle expenses, maintenance services, refuelings, fuel efficiency, and gasoline prices. It is a multilingual application—supporting both English and Persian—developed as a PWA (Progressive Web App) to ensure a smooth mobile experience. I developed the entire application, including both the back-end and front-end components.",
     "link": "https://yad.li/",
     "tags": [
       "Nest",
@@ -42,7 +42,13 @@
     "title": "The Life Guard Dashboard",
     "description": "This admin panel is for managing lifeguard recruitment and contracts and financial management of payments. Employee management, appointment management, payment management are parts of this program.",
     "link": "https://guardbase.lifeguardservices.ca/",
-    "tags": ["ReactJS", "TypeScript", "REST APIs", "Ant Design", "Axios"],
+    "tags": [
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Ant Design",
+      "Axios"
+    ],
     "images": [
       "assets/project-tlc-1.jpg",
       "assets/project-tlc-2.jpg",
@@ -81,7 +87,14 @@
   {
     "title": "ChatBot PoolPal",
     "description": "This project was designed as a specialized chatbot for the company.",
-    "tags": ["ReactJS", "TypeScript", "REST APIs", "Tailwind", "Axios", "Yup"],
+    "tags": [
+      "ReactJS",
+      "TypeScript",
+      "REST APIs",
+      "Tailwind",
+      "Axios",
+      "Yup"
+    ],
     "images": [
       "assets/project-chatbot-1.jpg",
       "assets/project-chatbot-2.jpg",
@@ -96,7 +109,13 @@
     "title": "Peekage Admin Panel",
     "description": "With Peekage, marketers can target a specific audience, have a two-way communication channel with consumers, and re-target samplers based on their behavior. Creating a panel for marketing users and for defining advertising campaigns and displaying the amount of initial feedback was one of the features of the panel.",
     "link": "https://panel.peekage.app/",
-    "tags": ["Vue", "Nuxt", "GraphQL", "Tailwind", "Yup"],
+    "tags": [
+      "Vue",
+      "Nuxt",
+      "GraphQL",
+      "Tailwind",
+      "Yup"
+    ],
     "images": [
       "assets/project-peekage-1.jpg",
       "assets/project-peekage-2.jpg",
@@ -109,7 +128,13 @@
     "title": "Righcar Admin Panel",
     "description": "In order to manage information, an admin panel was needed, which managed users with a large volume of data and parameters sent from the dongle. In this project, I was the only member of the front-end team and I implemented the structures related to the admin panel. With the construction of this department, managers and sales experts were aware of the performance of dongles sold.",
     "link": "https://panel.righcar.com/",
-    "tags": ["Angular", "Angular Material", "REST APIs", "RxJS", "RTL"],
+    "tags": [
+      "Angular",
+      "Angular Material",
+      "REST APIs",
+      "RxJS",
+      "RTL"
+    ],
     "images": [
       "assets/project-righcar-1.jpg",
       "assets/project-righcar-2.jpg",
@@ -143,7 +168,11 @@
     "title": "Righcar Website",
     "description": "The Rightcar website is dedicated to showcasing products and articles related to vehicle maintenance and repair. It serves as an e-commerce platform where customers can purchase various Rightcar dongles.",
     "link": "https://www.righcar.com/",
-    "tags": ["WordPress", "Custom Style", "RTL"],
+    "tags": [
+      "WordPress",
+      "Custom Style",
+      "RTL"
+    ],
     "images": [
       "assets/project-righcar-site-1.jpg",
       "assets/project-righcar-site-2.jpg",
@@ -154,7 +183,14 @@
     "title": "Aram Hospital Equipment Management",
     "description": "Aram Hospital, with its specialized clinics, needed to manage all of its equipment. Using this program, it was possible to manage and maintain the hospital's equipment. This program made it possible to be aware of periodic equipment services and reduce repair costs.",
     "link": "https://behpu.aramhospital.ir/",
-    "tags": ["Angular", "Ionic", "REST APIs", "ChartJS", "RxJS", "RTL"],
+    "tags": [
+      "Angular",
+      "Ionic",
+      "REST APIs",
+      "ChartJS",
+      "RxJS",
+      "RTL"
+    ],
     "images": [
       "assets/project-aram-1.jpg",
       "assets/project-aram-5.jpg",
@@ -197,6 +233,12 @@
     "subTitle": "(Music Band)",
     "description": "Chaartaar is an Iranian music group formed in 2011 by four members. The group's website was designed to introduce each member and share their biographies. Additionally, the albums section featured the latest singles and releases, with a built-in player that supported synchronized lyrics.",
     "link": "https://www.chaartaar.com/",
-    "tags": ["WordPress", "Photoshop", "JavaScript", "JQuery", "LTR/RTL"]
+    "tags": [
+      "WordPress",
+      "Photoshop",
+      "JavaScript",
+      "JQuery",
+      "LTR/RTL"
+    ]
   }
 ]
