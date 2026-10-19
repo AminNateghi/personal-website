@@ -10,7 +10,7 @@ export const ui: Record<Locale, Record<string, string>> = {
     "nav.resume": "Resume",
     "nav.portfolio": "Portfolio",
     "nav.lang.en": "EN",
-    "nav.lang.fa": "FA",
+    "nav.lang.fa": "فا",
     "about.title": "About me",
     "about.p1":
       "I am a front-end developer with back-end experience, specializing in the design and implementation of efficient, user-friendly web solutions and management dashboards. My primary passion lies in transforming complex challenges into simple, beautiful, and engaging designs.",
