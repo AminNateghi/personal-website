@@ -29,7 +29,12 @@ const projectData = locale === "fa" ? DataProjectFa : DataProject;
           </div>
 
           {project.link && (
-            <a class="project-link" href={project.link} target="_blank">
+            <a
+              class="project-link"
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+            >
               {project.link}
               <IconLink />
             </a>
