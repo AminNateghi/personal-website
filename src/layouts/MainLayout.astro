@@ -1,14 +1,16 @@
 ---
-import Nav from "@pages/components/Nav.astro";
-import Modal from "@pages/components/Modal.astro";
-import SideBar from "@pages/components/SideBar.astro";
-import Aurora from "@pages/components/Aurora.astro";
+import Nav from "@components/Nav.astro";
+import Modal from "@components/Modal.astro";
+import SideBar from "@components/SideBar.astro";
+import Aurora from "@components/Aurora.astro";
 import { getDir, getLocaleFromUrl, useTranslations } from "@i18n/utils";
 import "@assets/styles/style.scss";
 
 const locale = getLocaleFromUrl(Astro.url);
 const dir = getDir(locale);
 const t = useTranslations(locale);
+
+const { title, description = "" } = Astro.props;
 ---
 
 <html lang={locale} dir={dir}>
@@ -16,6 +18,7 @@ const t = useTranslations(locale);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#796a4383" />
+    {description && <meta name="description" content={description} />}
     <link
       rel="shortcut icon"
       href="/assets/my-avatar.png"
@@ -29,7 +32,7 @@ const t = useTranslations(locale);
       rel="stylesheet"
     />
 
-    <title>{t("site.title")}</title>
+    <title>{title} | {t("site.title")}</title>
   </head>
   <body>
     <main>
@@ -47,31 +50,18 @@ const t = useTranslations(locale);
 
 <style lang="scss">
   main {
-    margin: 15px 12px;
-    margin-bottom: 75px;
-    min-width: 259px;
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 55px;
   }
 
-  @media (min-width: 580px) {
-    main {
-      margin-top: 60px;
-      margin-bottom: 100px;
-    }
+  .main-content {
+    position: relative;
+    margin: auto;
   }
 
-  @media (min-width: 1024px) {
-    main {
-      margin-bottom: 60px;
-    }
-
-    .main-content {
-      position: relative;
-      width: max-content;
-      margin: auto;
-    }
-  }
-
-  @media (min-width: 1250px) {
+  @media screen and (min-width: 1224px) {
     main {
       max-width: 1200px;
       margin-inline: auto;
@@ -79,6 +69,7 @@ const t = useTranslations(locale);
       justify-content: center;
       align-items: stretch;
       gap: 25px;
+      margin-top: 60px;
     }
 
     .main-content {

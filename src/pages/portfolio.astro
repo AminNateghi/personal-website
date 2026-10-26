@@ -11,7 +11,7 @@ const t = useTranslations(locale);
 const projectData = locale === "fa" ? DataProjectFa : DataProject;
 ---
 
-<MainLayout>
+<MainLayout title={t("nav.portfolio")}>
   <article data-page="portfolio">
     <header>
       <h2 class="article-title">{t("portfolio.title")}</h2>

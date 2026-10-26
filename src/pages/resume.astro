@@ -10,7 +10,7 @@ const t = useTranslations(locale);
 const experienceData = locale === "fa" ? DataExperienceFa : DataExperience;
 ---
 
-<MainLayout>
+<MainLayout title={t("nav.resume")}>
   <article data-page="resume">
     <header>
       <h2 class="article-title">{t("resume.title")}</h2>

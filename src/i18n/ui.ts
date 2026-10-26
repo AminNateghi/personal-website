@@ -11,6 +11,7 @@ export const ui: Record<Locale, Record<string, string>> = {
     "nav.portfolio": "Portfolio",
     "nav.lang.en": "EN",
     "nav.lang.fa": "فا",
+    "nav.blog": "Blog",
     "about.title": "About me",
     "about.p1":
       "I am a front-end developer with back-end experience, specializing in the design and implementation of efficient, user-friendly web solutions and management dashboards. My primary passion lies in transforming complex challenges into simple, beautiful, and engaging designs.",
@@ -36,9 +37,10 @@ export const ui: Record<Locale, Record<string, string>> = {
     "nav.portfolio": "نمونه‌کارها",
     "nav.lang.en": "EN",
     "nav.lang.fa": "FA",
+    "nav.blog": "وبلاگ",
     "about.title": "معرفی",
     "about.p1":
-"من یک توسعه دهنده وب (Front-end) هستم که تجربه کار  در بک‌اند (Back-end) نیز دارم، تخصص من طراحی و پیاده‌سازی نرم‌افزاهای تحت وب، پنل‌های مدیریتی است. اشتیاق اصلی من، تبدیل چالش‌های پیچیده به طرح‌هایی ساده، زیبا و جذاب است.",
+      "من یک توسعه دهنده وب (Front-end) هستم که تجربه کار  در بک‌اند (Back-end) نیز دارم، تخصص من طراحی و پیاده‌سازی نرم‌افزاهای تحت وب، پنل‌های مدیریتی است. اشتیاق اصلی من، تبدیل چالش‌های پیچیده به طرح‌هایی ساده، زیبا و جذاب است.",
     "about.p2":
       "من برای توسعه نرم‌افزاهای تحت وب و پنل‌های مدیریتی اختصاصی و متناسب با نیازهای دقیق مشتریان، از فریم‌ورک‌ها و فناوری‌های پیشرویی همچون React، Vue و Angular بهره می‌برم. دامنه تخصص فنی من شامل مجموعه‌ای از ابزارها و فناوری‌ها نظیر Nuxt، Astro، TypeScript، Nest، Prisma، DrizzleORM، GraphQL، می‌شود.",
     "about.doing": "تجربه در",

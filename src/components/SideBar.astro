@@ -65,11 +65,7 @@ const t = useTranslations(locale);
 
 <style lang="scss">
   .sidebar {
-    background: var(--color-base-300);
-    border-radius: var(--radius-box);
-    padding: 15px;
-    z-index: 1;
-    margin-bottom: 16px;
+    display: none;
 
     .sidebar-list {
       display: grid;
@@ -156,30 +152,11 @@ const t = useTranslations(locale);
     margin-top: 16px;
   }
 
-  @media (min-width: 580px) {
+  @media (min-width: 1224px) {
     .sidebar {
-      margin-bottom: 30px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .sidebar {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      position: sticky;
-    }
-  }
-
-  @media (min-width: 1250px) {
-    .sidebar {
+      background: var(--color-base-300);
+      border-radius: var(--radius-box);
+      padding: 15px;
       position: sticky;
       display: flex;
       flex-direction: column;

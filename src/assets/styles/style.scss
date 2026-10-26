@@ -32,8 +32,7 @@ li {
 img,
 a,
 button,
-time,
-span {
+time {
   display: block;
 }
 
@@ -71,6 +70,10 @@ html[dir="rtl"] {
     font-family: "Vazirmatn", "Noto Sans Display", sans-serif;
     line-height: normal;
   }
+
+  pre {
+    direction: ltr;
+  }
 }
 
 body[class="dark-mode"] {
@@ -93,16 +96,19 @@ article {
   padding: 26px;
   z-index: 1;
   animation: fade 1s ease backwards;
+
 }
 
 @keyframes fade {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 
 .article-title {
   position: relative;
@@ -160,6 +166,7 @@ article {
     margin: 0 auto;
   }
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -284,6 +291,7 @@ article {
   .slider {
     width: 95vw;
   }
+
   .slider-btn {
     width: 36px;
     height: 36px;

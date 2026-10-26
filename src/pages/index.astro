@@ -28,7 +28,7 @@ function getIconComponent(name: string): IconComponent | null {
 }
 ---
 
-<MainLayout>
+<MainLayout title={t("nav.about")}>
   <article data-page="about">
     <header>
       <h2 class="article-title">{t("about.title")}</h2>
@@ -97,6 +97,7 @@ function getIconComponent(name: string): IconComponent | null {
       z-index: 1;
       display: flex;
       flex-direction: row;
+      width: 100%;
 
       &::before {
         content: "";
@@ -172,14 +173,7 @@ function getIconComponent(name: string): IconComponent | null {
     }
   }
 
-  @media (min-width: 580px) {
-    .service-list {
-      .item {
-        width: 100%;
-      }
-    }
-  }
-  @media (min-width: 1024px) {
+  @media (min-width: 1224px) {
     .service-list {
       .item {
         width: 48%;

@@ -1,0 +1,12 @@
+---
+import BlogArticle from "@components/BlogArticle.astro";
+import { getBlogArticlePaths } from "@lib/blog";
+
+export async function getStaticPaths() {
+    return getBlogArticlePaths("fa");
+}
+
+const { post, translatedUrl } = Astro.props;
+---
+
+<BlogArticle post={post} translatedUrl={translatedUrl} />
