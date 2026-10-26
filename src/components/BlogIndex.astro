@@ -34,7 +34,7 @@ const description = isPersian
       ) : (
         <div class="post-list">
           {posts.map((post) => {
-            const slug = post.id.split("/").pop()!;
+            const slug = post.id.split("/").pop();
 
             const href = lang === "fa" ? `/fa/blog/${slug}/` : `/blog/${slug}/`;
 
@@ -78,9 +78,9 @@ const description = isPersian
 <style>
   .post-list {
     margin-top: 16px;
-    display: flex;
-
-    gap: 20px 25px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
 
     .item {
       position: relative;
@@ -89,6 +89,11 @@ const description = isPersian
       display: flex;
       flex-direction: column;
       width: 100%;
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid var(--color-base-400);
+      }
 
       &::before {
         content: "";
@@ -127,9 +132,7 @@ const description = isPersian
 
   @media (min-width: 1224px) {
     .post-list {
-      .item {
-        width: 48%;
-      }
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 </style>
