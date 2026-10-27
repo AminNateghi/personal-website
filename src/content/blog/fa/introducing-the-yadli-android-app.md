@@ -18,7 +18,8 @@ tags:
 
 اپ یادلی هیچ نیازی به اینترنت ندارد و بصورت آفلاین کار می‌کند، هیچ نیازی به ثبت نام و لاگین کردن ندارد. تمامی اطلاعاتی که در برنامه وارد می‌کنید در گوشی شما ذخیره می‌شود.
 
-![](/public/assets/yadli-banner-fa.png)
+<img alt="yadli banner" src="https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/yadli-banner-fa.png">
+
 
 ## امکانات
 
@@ -40,4 +41,4 @@ tags:
 
 ## دانلود
 
-برنامه را می‌توانید از [GitHub](https://github.com/AminNateghi/yadli-react-native/releases/latest) دانلود کنید
+<a href='https://github.com/AminNateghi/yadli-react-native/releases/latest'><img height=70 alt='Get it on GitHub' src='https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/github.svg'/></a>

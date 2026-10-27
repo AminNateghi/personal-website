@@ -18,7 +18,7 @@ and fuel costs. With this app, you can monitor vehicle expenses, maintenance ser
 
 No registration, no login, no need internet connection. All data stays on your phone.
 
-![](/public/assets/yadli-banner-en.png)
+<img alt="yadli banner" src="https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/yadli-banner-en.png">
 
 ## Features
 
@@ -32,4 +32,4 @@ No registration, no login, no need internet connection. All data stays on your p
 
 ## Download
 
-You can download the program from [GitHub](https://github.com/AminNateghi/yadli-react-native/releases/latest)
+<a href='https://github.com/AminNateghi/yadli-react-native/releases/latest'><img height=70 alt='Get it on GitHub' src='https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/github.svg'/></a>
