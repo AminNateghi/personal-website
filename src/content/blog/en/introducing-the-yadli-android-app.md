@@ -32,4 +32,4 @@ No registration, no login, no need internet connection. All data stays on your p
 
 ## Download
 
-<a href='https://github.com/AminNateghi/yadli-react-native/releases/latest'><img height=70 alt='Get it on GitHub' src='https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/github.svg'/></a>
+[Get it on GitHub](https://github.com/AminNateghi/yadli-react-native/releases/latest)

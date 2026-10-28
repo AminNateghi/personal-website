@@ -41,4 +41,4 @@ tags:
 
 ## دانلود
 
-<a href='https://github.com/AminNateghi/yadli-react-native/releases/latest'><img height=70 alt='Get it on GitHub' src='https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/github.svg'/></a>
+[دانلود از گیت‌هاب](https://github.com/AminNateghi/yadli-react-native/releases/latest)
