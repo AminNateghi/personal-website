@@ -15,7 +15,7 @@ tags:
 ## استفاده از transaction دیتابیس برای عملیات چندمرحله‌ای
 
 وقتی چندین عملیات بر روی دیتابیس دارید که احتمال موفق بودن یا نبودن اونها وجود داره، همه اونها تو یک تراکنش (transaction) بزارید.
-برای مقال تو TypeORM:
+برای مثال تو TypeORM:
 
 ```ts
 await this.dataSource.transaction(async (manager) => {
