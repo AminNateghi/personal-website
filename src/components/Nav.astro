@@ -5,15 +5,17 @@ import IconLayers from "@assets/images/icon-layers.svg";
 import IconLayer from "@assets/images/icon-layer.svg";
 import IconClose from "@assets/images/icon-close.svg";
 import IconMenu from "@assets/images/icon-menu-dots-circle.svg";
+
 import { getLocaleFromUrl, getLocalePath, useTranslations } from "@i18n/utils";
 
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
+
 const switchLocale = locale === "en" ? "fa" : "en";
 const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
 ---
 
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
   <ul class="navbar-list">
     <li class="navbar-item">
       <a class="navbar-link" href={getLocalePath("/", locale)}>
@@ -34,49 +36,119 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
     </li>
 
     <li class="navbar-item">
-      <a class="navbar-link" href={getLocalePath(`/blog/`, locale)}>
+      <a class="navbar-link" href={getLocalePath("/blog/", locale)}>
         {t("nav.blog")}
       </a>
     </li>
 
-    <li class="navbar-item">
-      <li>
-        <button
-          id="toggleMore"
-          type="button"
-          aria-label="Open more options"
-          aria-controls="navbarMore"
-          aria-expanded="false"
-        >
-          <span class="menu-icon menu-icon-open">
-            <IconMenu />
-          </span>
-          <span class="menu-icon menu-icon-close">
-            <IconClose />
-          </span>
-        </button>
-      </li>
+    <!-- Desktop controls -->
+    <li class="navbar-item is-desktop">
+      <button
+        class="control-button"
+        type="button"
+        data-theme-toggle
+        aria-label="Toggle theme"
+      >
+        <span data-theme-icon="sun" class="theme-icon">
+          <IconSun />
+        </span>
+        <span data-theme-icon="moon" class="theme-icon">
+          <IconMoon />
+        </span>
+      </button>
+    </li>
+
+    <li class="navbar-item is-desktop">
+      <button
+        class="control-button"
+        type="button"
+        data-aurora-toggle
+        aria-label="Toggle aurora"
+      >
+        <span data-aurora-icon="layers" class="theme-icon">
+          <IconLayers />
+        </span>
+        <span data-aurora-icon="layer" class="theme-icon">
+          <IconLayer />
+        </span>
+      </button>
+    </li>
+
+    <li class="navbar-item is-desktop">
+      <a
+        class="navbar-link lang-link"
+        href={switchHref}
+        data-locale={switchLocale}
+      >
+        {switchLocale === "fa" ? t("nav.lang.fa") : t("nav.lang.en")}
+      </a>
+    </li>
+
+    <!-- Mobile menu button -->
+    <li class="navbar-item is-mobile">
+      <button
+        id="toggleMore"
+        class="more-button"
+        type="button"
+        aria-label="Open more options"
+        aria-controls="navbarMore"
+        aria-expanded="false"
+      >
+        <span class="menu-icon menu-icon-open">
+          <IconMenu />
+        </span>
+
+        <span class="menu-icon menu-icon-close">
+          <IconClose />
+        </span>
+      </button>
     </li>
   </ul>
 </nav>
 
-<nav id="navbarMore" class="navbar-more" aria-hidden="true" inert>
+<!-- Mobile additional options -->
+<nav
+  id="navbarMore"
+  class="navbar-more"
+  aria-label="Additional navigation options"
+  aria-hidden="true"
+  inert
+>
   <ul class="navbar-list">
-    <li>
-      <button id="toggleTheme" type="button">
-        <div id="iconSun" class="theme-icon"><IconSun /></div>
-        <div id="iconMoon" class="theme-icon"><IconMoon /></div>
+    <li class="navbar-item">
+      <button
+        class="control-button"
+        type="button"
+        data-theme-toggle
+        aria-label="Toggle theme"
+      >
+        <span data-theme-icon="sun" class="theme-icon">
+          <IconSun />
+        </span>
+        <span data-theme-icon="moon" class="theme-icon">
+          <IconMoon />
+        </span>
       </button>
     </li>
-    <li>
-      <button id="toggleAurora" type="button">
-        <div id="iconLayers" class="theme-icon"><IconLayers /></div>
-        <div id="iconLayer" class="theme-icon"><IconLayer /></div>
+
+    <li class="navbar-item">
+      <button
+        class="control-button"
+        type="button"
+        data-aurora-toggle
+        aria-label="Toggle aurora"
+      >
+        <span data-aurora-icon="layers" class="theme-icon">
+          <IconLayers />
+        </span>
+        <span data-aurora-icon="layer" class="theme-icon">
+          <IconLayer />
+        </span>
       </button>
     </li>
-    <li>
+
+    <li class="navbar-item">
       <a
-        id="toggleLanguage"
         class="navbar-link lang-link"
         href={switchHref}
         data-locale={switchLocale}
@@ -104,15 +176,30 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    height: 54px;
     padding: 0 10px;
     list-style: none;
-    height: 54px;
-    gap: 20px;
+    margin: 0;
+  }
+
+  .navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .is-desktop {
+    display: none;
+  }
+
+  .is-mobile {
+    display: flex;
   }
 
   .navbar-link {
     color: var(--color-text);
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
 
     &.active {
       color: var(--color-text);
@@ -120,33 +207,51 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
     }
   }
 
-  #toggleAurora,
-  #toggleTheme {
-    width: 24px;
-    height: 24px;
+  .control-button {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
   }
 
   .theme-icon {
     display: none;
+    grid-area: 1 / 1;
+    place-items: center;
   }
 
   .theme-icon.active {
-    display: block;
+    display: grid;
+  }
+
+  .control-button svg {
+    width: 24px;
+    height: 24px;
   }
 
   .lang-link {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.6px;
-    color: var(--color-text);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+  /* Mobile additional menu */
   .navbar-more {
     position: fixed;
     bottom: 70px;
     left: 50%;
-    transform: translate(-50%, 16px);
     width: 200px;
+    transform: translate(-50%, 16px);
 
     background: var(--color-bg-nav);
     backdrop-filter: blur(10px);
@@ -175,8 +280,15 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
       visibility 0s;
   }
 
-  /* Toggle menu icons */
-  #toggleMore {
+  .navbar-more .navbar-list {
+    flex-direction: row;
+    height: auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  /* More menu button */
+  .more-button {
     display: grid;
     place-items: center;
     width: 40px;
@@ -189,15 +301,14 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
   }
 
   .menu-icon {
-    grid-area: 1 / 1;
     display: grid;
     place-items: center;
+    grid-area: 1 / 1;
     transition:
       opacity 200ms ease,
       transform 200ms ease;
   }
 
-  /* Default: menu closed */
   .menu-icon-open {
     opacity: 1;
     transform: rotate(0deg);
@@ -209,7 +320,6 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
     pointer-events: none;
   }
 
-  /* Menu open */
   #toggleMore[aria-expanded="true"] .menu-icon-open {
     opacity: 0;
     transform: rotate(90deg);
@@ -222,63 +332,59 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
     pointer-events: auto;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .navbar-more,
-    .menu-icon {
-      transition: none;
-    }
-  }
-
+  /* Desktop */
   @media (min-width: 1224px) {
     .navbar {
       position: absolute;
-      bottom: auto;
       top: 0;
-      left: auto;
       right: 0;
+      bottom: auto;
+      left: auto;
       width: max-content;
-      border-radius: 0 12px;
       padding: 0 20px;
       background: var(--color-base-200);
+      border-radius: 0 12px;
     }
 
-    html[dir="rtl"] {
-      .navbar {
-        top: 0;
-        left: 0;
-        right: auto;
-        border-radius: 12px 0;
-      }
+    .is-desktop {
+      display: flex;
+    }
 
-      .navbar-more {
-        position: absolute;
-        top: 2px;
-        right: unset;
-        left: -150px;
-        transform: translate(240px, 0px);
-        width: 270px;
-      }
+    .is-mobile {
+      display: none;
     }
 
     .navbar-more {
-      position: absolute;
-      top: 2px;
-      left: auto;
-      right: -70px;
-      transform: translate(220px, 0px);
-      width: 300px;
-      height: 50px;
+      display: none;
+    }
+
+    html[dir="rtl"] .navbar {
+      right: auto;
+      left: 0;
+      border-radius: 12px 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .navbar-more,
+    .menu-icon,
+    .navbar-link {
+      transition: none;
     }
   }
 </style>
 
 <script>
   const toggleButton = document.querySelector<HTMLButtonElement>("#toggleMore");
+
   const moreMenu = document.querySelector<HTMLElement>("#navbarMore");
 
   if (toggleButton && moreMenu) {
+    const mobileQuery = window.matchMedia("(max-width: 1223px)");
+
     const setMenuOpen = (open: boolean) => {
       toggleButton.setAttribute("aria-expanded", String(open));
+
       toggleButton.setAttribute(
         "aria-label",
         open ? "Close more options" : "Open more options",
@@ -295,6 +401,20 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
       setMenuOpen(!isOpen);
     });
 
+    // Close menu when clicking outside.
+    document.addEventListener("click", (event) => {
+      const target = event.target;
+
+      if (
+        target instanceof Node &&
+        !moreMenu.contains(target) &&
+        !toggleButton.contains(target)
+      ) {
+        setMenuOpen(false);
+      }
+    });
+
+    // Close menu with Escape.
     document.addEventListener("keydown", (event) => {
       if (
         event.key === "Escape" &&
@@ -305,14 +425,14 @@ const switchHref = getLocalePath(Astro.url.pathname, switchLocale);
       }
     });
 
-    document.addEventListener("click", (event) => {
-      const target = event.target;
+    // Close menu when navigating.
+    moreMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setMenuOpen(false));
+    });
 
-      if (
-        target instanceof Node &&
-        !moreMenu.contains(target) &&
-        !toggleButton.contains(target)
-      ) {
+    // Keep menu closed when switching to desktop.
+    mobileQuery.addEventListener("change", (event) => {
+      if (!event.matches) {
         setMenuOpen(false);
       }
     });

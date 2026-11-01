@@ -1,35 +1,82 @@
-const toggleAuroraButton = document.getElementById("toggleAurora");
+const AURORA_KEY = "aurora";
+
+const auroraButtons = document.querySelectorAll(
+  "[data-aurora-toggle]"
+);
+
+const layersIcons = document.querySelectorAll(
+  '[data-aurora-icon="layers"]'
+);
+
+const layerIcons = document.querySelectorAll(
+  '[data-aurora-icon="layer"]'
+);
+
 const auroraContainer = document.querySelector(".aurora-container");
 
-const AURORA_KEY = "aurora";
-const iconLayers = document.getElementById("iconLayers");
-const iconLayer = document.getElementById("iconLayer");
-
-function setAurora(isActive) {
-  localStorage.setItem(AURORA_KEY, isActive ? "on" : "off");
-
-  if (auroraContainer) {
-    auroraContainer.classList.toggle("is-hidden", !isActive);
-  }
-
-  if (iconLayers) {
-    iconLayers.classList.toggle("active", isActive);
-  }
-
-  if (iconLayer) {
-    iconLayer.classList.toggle("active", !isActive);
+function getSavedAurora() {
+  try {
+    return localStorage.getItem(AURORA_KEY);
+  } catch {
+    return null;
   }
 }
 
-const savedAurora = localStorage.getItem(AURORA_KEY);
-const initialIsActive = savedAurora ? savedAurora === "on" : true;
-setAurora(initialIsActive);
+function saveAurora(isActive) {
+  try {
+    localStorage.setItem(
+      AURORA_KEY,
+      isActive ? "on" : "off"
+    );
+  } catch {
+    // Storage may be unavailable.
+  }
+}
 
-if (toggleAuroraButton) {
-  toggleAuroraButton.addEventListener("click", () => {
-    const isCurrentlyActive = auroraContainer
-      ? !auroraContainer.classList.contains("is-hidden")
-      : savedAurora === "on";
-    setAurora(!isCurrentlyActive);
+
+function updateAuroraIcons(isActive) {
+  layersIcons.forEach((icon) => {
+    icon.classList.toggle("active", isActive);
+  });
+
+  layerIcons.forEach((icon) => {
+    icon.classList.toggle("active", !isActive);
+  });
+
+  auroraButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(isActive));
   });
 }
+
+
+function setAurora(isActive) {
+  saveAurora(isActive);
+
+  if (auroraContainer) {
+    auroraContainer.classList.toggle(
+      "is-hidden",
+      !isActive
+    );
+  }
+
+  updateAuroraIcons(isActive);
+}
+
+
+const savedAurora = getSavedAurora();
+
+const initialIsActive =
+  savedAurora === null ? true : savedAurora === "on";
+
+setAurora(initialIsActive);
+
+// Handle desktop and mobile buttons.
+auroraButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const isCurrentlyActive = auroraContainer
+      ? !auroraContainer.classList.contains("is-hidden")
+      : getSavedAurora() !== "off";
+
+    setAurora(!isCurrentlyActive);
+  });
+});

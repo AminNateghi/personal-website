@@ -1,46 +1,78 @@
-const toggleThemeButton = document.getElementById("toggleTheme");
 
-// theme
 const THEME_KEY = "theme";
 const DARK_MODE_CLASS = "dark-mode";
-const theme = localStorage.getItem(THEME_KEY);
-const iconSun = document.getElementById("iconSun");
-const iconMoon = document.getElementById("iconMoon");
+
+const themeButtons = document.querySelectorAll("[data-theme-toggle]");
+
+const sunIcons = document.querySelectorAll(
+  '[data-theme-icon="sun"]'
+);
+
+const moonIcons = document.querySelectorAll(
+  '[data-theme-icon="moon"]'
+);
+
+
+function getSavedTheme() {
+  try {
+    return localStorage.getItem(THEME_KEY);
+  } catch {
+    return null;
+  }
+}
+
+function saveTheme(theme) {
+  try {
+    localStorage.setItem(THEME_KEY, theme);
+  } catch {
+    // Storage may be unavailable.
+  }
+}
+
+
+function updateThemeIcons(isDarkMode) {
+  sunIcons.forEach((icon) => {
+    icon.classList.toggle("active", isDarkMode);
+  });
+
+  moonIcons.forEach((icon) => {
+    icon.classList.toggle("active", !isDarkMode);
+  });
+}
+
 
 function setTheme(isDarkMode) {
-  const bodyElement = document.body;
-  if (isDarkMode) {
-    bodyElement.classList.add(DARK_MODE_CLASS);
-    localStorage.setItem(THEME_KEY, "dark");
-    iconSun.classList.add("active");
-    iconMoon.classList.remove("active");
-  } else {
-    bodyElement.classList.remove(DARK_MODE_CLASS);
-    localStorage.setItem(THEME_KEY, "light");
-    iconSun.classList.remove("active");
-    iconMoon.classList.add("active");
-  }
+  document.body.classList.toggle(DARK_MODE_CLASS, isDarkMode);
+
+  saveTheme(isDarkMode ? "dark" : "light");
+
+  updateThemeIcons(isDarkMode);
+
+  themeButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(isDarkMode));
+  });
 }
 
-const savedTheme = localStorage.getItem(THEME_KEY);
-if (savedTheme === "dark") {
-  setTheme(true);
-} else if (savedTheme === "light") {
-  setTheme(false);
-} else {
-  // based on system preference
-  if (
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  ) {
-    setTheme(true);
-  } else {
-    setTheme(false);
-  }
-}
 
-toggleThemeButton.addEventListener("click", function () {
-  const bodyElement = document.body;
-  const isCurrentlyDarkMode = bodyElement.classList.contains(DARK_MODE_CLASS);
-  setTheme(!isCurrentlyDarkMode);
+const savedTheme = getSavedTheme();
+
+const systemPrefersDark = window.matchMedia(
+  "(prefers-color-scheme: dark)"
+).matches;
+
+const initialDarkMode =
+  savedTheme === "dark" ||
+  (savedTheme !== "light" && systemPrefersDark);
+
+setTheme(initialDarkMode);
+
+// Listen to all desktop and mobile theme buttons.
+themeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const isDarkMode = document.body.classList.contains(
+      DARK_MODE_CLASS
+    );
+
+    setTheme(!isDarkMode);
+  });
 });
