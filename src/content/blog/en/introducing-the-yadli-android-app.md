@@ -20,7 +20,7 @@ No registration, no login, no need internet connection. All data stays on your p
 
 <img alt="yadli banner" src="https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/yadli-banner-en.png">
 
-## Features
+### Features
 
 - **Fuel log:** date, odometer, liters, price/liter, total, full-tank flag, station
 - **Services:** type, date, odometer, cost, note
@@ -30,6 +30,6 @@ No registration, no login, no need internet connection. All data stays on your p
 - **Bilingual FA/EN + RTL:** language stored in `profile` table
 - **Offline only:** store all data in sqlite db
 
-## Download
+### Download
 
 [Get it on GitHub](https://github.com/AminNateghi/yadli-react-native/releases/latest)

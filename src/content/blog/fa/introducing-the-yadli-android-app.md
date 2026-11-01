@@ -21,7 +21,7 @@ tags:
 <img alt="yadli banner" src="https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/yadli-banner-fa.png">
 
 
-## امکانات
+### امکانات
 
 **سوابق سوخت‌گیری** : ثبت کیلومتر طی شده به همراه میزان سوخت
 
@@ -39,6 +39,6 @@ tags:
 
 **اپن-سورس** : برنامه اوپن-سورس و رایگان می‌باشد
 
-## دانلود
+### دانلود
 
 [دانلود از گیت‌هاب](https://github.com/AminNateghi/yadli-react-native/releases/latest)
