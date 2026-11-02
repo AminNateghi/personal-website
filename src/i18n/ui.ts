@@ -5,7 +5,8 @@ export const defaultLocale: Locale = "en";
 
 export const ui: Record<Locale, Record<string, string>> = {
   en: {
-    "site.title": "Amin Nateghi - Personal Portfolio",
+    "site.title": "Amin Nateghi",
+    "site.description": "Personal Portfolio",
     "nav.about": "About",
     "nav.resume": "Resume",
     "nav.portfolio": "Portfolio",
@@ -31,7 +32,8 @@ export const ui: Record<Locale, Record<string, string>> = {
     "modal.next": "Next image",
   },
   fa: {
-    "site.title": "امین ناطقی - سایت شخصی",
+    "site.title": "امین ناطقی",
+    "site.description": "سایت شخصی",
     "nav.about": "معرفی",
     "nav.resume": "رزومه",
     "nav.portfolio": "نمونه‌کارها",
