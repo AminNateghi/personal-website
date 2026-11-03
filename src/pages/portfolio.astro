@@ -28,17 +28,17 @@ const projectData = locale === "fa" ? DataProjectFa : DataProject;
             <p>{project.description}</p>
           </div>
 
-          {project.link && (
+          {project.link?.map((link) => (
             <a
               class="project-link"
-              href={project.link}
+              href={link}
               target="_blank"
               rel="noreferrer"
             >
-              {project.link}
+              {link}
               <IconLink />
             </a>
-          )}
+          ))}
 
           <div class="tags">
             {project.tags?.map((tag) => (
