@@ -120,6 +120,7 @@ const blogHome = isPersian ? "/fa/blog/" : "/blog/";
       margin-bottom: 10px;
     }
 
+    li code,
     p code {
       background-color: var(--color-base-200);
       padding: 1px 5px;
@@ -144,6 +145,20 @@ const blogHome = isPersian ? "/fa/blog/" : "/blog/";
       border-radius: 0.5rem;
       margin-top: 10px;
       margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+
+      li {
+        list-style-position: inside;
+        list-style: disc;
+      }
+    }
+  }
+
+  html[dir="rtl"] {
+    ul {
+      padding-right: 20px;
     }
   }
 
