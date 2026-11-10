@@ -13,7 +13,7 @@ tags:
 
 ---
 
-## Make retries safe with idempotency keys
+## ایمن کردن عملیات تکرار با UUID
 
 شبکه‌های موبایل غیرقابل‌ اطمینانن. ممکنه کاربر دکمه «ثبت سفارش» بزنه، همون موقع اینترنت موبایل قطع شه و دوباره دکمه رو بزنه؛ اما سرور قبلا رکوئست اولش رو پردازش کرده، اینترنت نداشته که ببینه.
 
@@ -21,10 +21,9 @@ tags:
 
 ```ts
 import * as Crypto from "expo-crypto";
+const idempotencyKey = Crypto.randomUUID();
 
 async function submitOrder(order: Order) {
-  const idempotencyKey = Crypto.randomUUID();
-
   return fetch("https://api.example.com/orders", {
     method: "POST",
     headers: {

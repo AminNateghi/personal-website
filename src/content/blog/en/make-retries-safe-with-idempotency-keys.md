@@ -21,10 +21,9 @@ Generate one idempotency key per logical operation and reuse it for retries.
 
 ```ts
 import * as Crypto from "expo-crypto";
+const idempotencyKey = Crypto.randomUUID();
 
 async function submitOrder(order: Order) {
-  const idempotencyKey = Crypto.randomUUID();
-
   return fetch("https://api.example.com/orders", {
     method: "POST",
     headers: {
