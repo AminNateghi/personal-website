@@ -14,5 +14,11 @@
     "subTitle": "(PWA)",
     "description": "I develop cutting-edge PWAs Apps for a native app-like experience in the browser. Expect modern design and robust performance.",
     "icon": "mobile"
+  },
+  {
+    "title": "Mobile Native App",
+    "subTitle": "(Android)",
+    "description": "I build apps for Android phones, featuring modern, high-quality design.",
+    "icon": "mobile"
   }
 ]
