@@ -305,6 +305,13 @@
       "JavaScript",
       "JQuery",
       "LTR/RTL"
+    ],
+    "images": [
+      "assets/project-chaartaar-fa-1.png",
+      "assets/project-chaartaar-fa-2.png",
+      "assets/project-chaartaar-fa-3.png",
+      "assets/project-chaartaar-fa-4.png",
+      "assets/project-chaartaar-fa-5.png"
     ]
   }
 ]
