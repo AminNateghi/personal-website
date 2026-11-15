@@ -8,6 +8,7 @@
   --color-active: #a46a00;
   --color-bg-nav: #796a4383;
   --radius-box: 12px;
+  --border: 2px solid #796a4383;
 
   margin: 0;
   padding: 0;
@@ -85,6 +86,7 @@ body[class="dark-mode"] {
   --color-text: #c7cacf;
   --color-active: #d08700;
   --color-bg-nav: #211f1c83;
+  --border: 2px solid #5e5d5b83;
 
   background: var(--color-base-100);
   color: var(--color-text);
@@ -96,7 +98,7 @@ article {
   padding: 26px;
   z-index: 1;
   animation: fade 1s ease backwards;
-
+  border: var(--border);
 }
 
 @keyframes fade {

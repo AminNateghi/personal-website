@@ -63,6 +63,9 @@ const projectData = locale === "fa" ? DataProjectFa : DataProject;
 </MainLayout>
 
 <style lang="scss">
+  article {
+    margin-bottom: 425px;
+  }
   .project-section {
     .content {
       .title {
@@ -138,6 +141,39 @@ const projectData = locale === "fa" ? DataProjectFa : DataProject;
     .project-link {
       direction: ltr !important;
       font-family: "Noto Sans Display", sans-serif;
+    }
+  }
+
+  p,
+  h2,
+  h3,
+  blockquote,
+  hr,
+  img,
+  .project-link,
+  .tags {
+    animation: text-appear ease-in both;
+    animation-timeline: view();
+    animation-range: 0vh 30vh;
+  }
+
+  @prefers-reduced-motion {
+    p,
+    h2,
+    h3,
+    blockquote,
+    hr,
+    img,
+    .project-link,
+    .tags {
+      animation: none;
+    }
+  }
+
+  @keyframes text-appear {
+    from {
+      opacity: 0;
+      translate: 0 8rem;
     }
   }
 </style>

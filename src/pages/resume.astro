@@ -26,31 +26,32 @@ const experienceData = locale === "fa" ? DataExperienceFa : DataExperience;
       </div>
 
       <ol class="timeline-list">
-        {
-          experienceData.map((experience) => (
-            <li class="timeline-item">
-              <h4 class="timeline-item-title">{experience.title}</h4>
+        {experienceData.map((experience) => (
+          <li class="timeline-item">
+            <h4 class="timeline-item-title">{experience.title}</h4>
 
-              <span>
-                {experience.date} | {experience.type}
-              </span>
+            <p class="timeline-date">
+              {experience.date} | {experience.type}
+            </p>
 
-              <p class="timeline-text">{experience.description}</p>
+            <p class="timeline-text">{experience.description}</p>
 
-              <div class="tags">
-                {experience.tags?.map((tag) => (
-                  <div class="tag">{tag}</div>
-                ))}
-              </div>
-            </li>
-          ))
-        }
+            <div class="tags">
+              {experience.tags?.map((tag) => (
+                <div class="tag">{tag}</div>
+              ))}
+            </div>
+          </li>
+        ))}
       </ol>
     </section>
   </article>
 </MainLayout>
 
 <style lang="scss">
+  article {
+    margin-bottom: 425px;
+  }
   .timeline .title-wrapper {
     display: flex;
     align-items: center;
@@ -75,6 +76,11 @@ const experienceData = locale === "fa" ? DataExperienceFa : DataExperience;
     font-size: 14px;
     line-height: 1.3;
     margin-bottom: 7px;
+  }
+
+  .timeline-date {
+    font-size: 11px;
+    margin: 3px 0;
   }
 
   .timeline-list span {
@@ -139,6 +145,41 @@ const experienceData = locale === "fa" ? DataExperienceFa : DataExperience;
     .timeline-item::after {
       left: auto;
       right: -32px;
+    }
+  }
+
+  p,
+  h2,
+  h3,
+  h4,
+  hr,
+  img,
+  .timeline-date,
+  .project-link,
+  .tags {
+    animation: text-appear ease-in both;
+    animation-timeline: view();
+    animation-range: 0vh 30vh;
+  }
+
+  @prefers-reduced-motion {
+    p,
+    h2,
+    h3,
+    h4,
+    hr,
+    img,
+    .timeline-date,
+    .project-link,
+    .tags {
+      animation: none;
+    }
+  }
+
+  @keyframes text-appear {
+    from {
+      opacity: 0;
+      translate: 0 8rem;
     }
   }
 </style>
