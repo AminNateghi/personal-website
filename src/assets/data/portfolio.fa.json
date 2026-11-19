@@ -23,11 +23,11 @@
     ]
   },
   {
-    "title": "یادلی - نسخه اندروید",
+    "title": "خودبان - نسخه اندروید",
     "description": "اپلیکشن اندرویدی دستیار مدیریت خودرو کاملا آفلاین و بدون نیاز به اینترنت و بدون نیاز به ثبت نام. تمامی داده‌های برنامه بر روی گوشی شما ذخیره می‌شود.\nثبت سوابق سوخت‌گیری، سرویس‌ها و هزینه‌ها به همراه یادآوری دوره‌ای برای جلوگیری از هزینه‌های سنگین تعمیر خودرو.",
     "link": [
-      "https://github.com/AminNateghi/yadli-react-native/releases/latest",
-      "https://cafebazaar.ir/app/xyz.nateghi.yadli"
+      "https://github.com/AminNateghi/khodban/releases/latest",
+      "https://cafebazaar.ir/app/xyz.nateghi.khodban"
     ],
     "tags": [
       "ReactNative",

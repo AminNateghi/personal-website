@@ -23,11 +23,11 @@
     ]
   },
   {
-    "title": "Yadli - Android Version",
+    "title": "Khodban - Android Version",
     "description": "Offline-first React Native app for managing vehicle maintenance. No registration, no login, no backend. All data stays on-device in SQLite.\nLog refueling, periodic services, vehicle expenses, and set odometer/date",
     "link": [
-      "https://github.com/AminNateghi/yadli-react-native/releases/latest",
-      "https://cafebazaar.ir/app/xyz.nateghi.yadli?l=en"
+      "https://github.com/AminNateghi/khodban/releases/latest",
+      "https://cafebazaar.ir/app/xyz.nateghi.khodban?l=en"
     ],
     "tags": [
       "ReactNative",
