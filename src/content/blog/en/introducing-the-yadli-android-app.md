@@ -1,24 +1,25 @@
 ---
 
-title: "Introducing the Yadli Android App"
+title: "Introducing the Khodban Android App"
 description: "Offline-first Android app for managing vehicle maintenance."
 pubDate: 2026-10-28
 lang: en
-translationKey: "introducing-the-yadli-android-app"
+translationKey: "introducing-the-khodban-android-app"
 draft: false
 tags:
-- Yadli
+- Android
+- App
 
 ---
 
-## Introducing the Yadli Android App
+## Introducing the Khodban Android App
 
-Yadli is an application for tracking mileage, fuel consumption,
+Khodban is an application for tracking mileage, fuel consumption,
 and fuel costs. With this app, you can monitor vehicle expenses, maintenance services, refueling, fuel efficiency, and gasoline prices. It is a multilingual application, supporting both English and Persian.
 
 No registration, no login, no need internet connection. All data stays on your phone.
 
-<img alt="yadli banner" src="https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/yadli-banner-en.png">
+<img alt="banner" src="https://raw.githubusercontent.com/AminNateghi/khodban/refs/heads/main/assets/banner-en.png">
 
 ### Features
 
@@ -32,4 +33,4 @@ No registration, no login, no need internet connection. All data stays on your p
 
 ### Download
 
-[Get it on GitHub](https://github.com/AminNateghi/yadli-react-native/releases/latest)
+[Get it on GitHub](https://github.com/AminNateghi/khodban/releases/latest)

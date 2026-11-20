@@ -1,24 +1,25 @@
 ---
 
-title: "معرفی اپلیکیشن اندرویدی یادلی"
-description: "یادلی یک اپ برای یادآوری و نگهداری از خودرو شماست"
+title: "معرفی اپلیکیشن اندرویدی خودران"
+description: "خودران یک اپ برای یادآوری و نگهداری از خودرو شماست"
 pubDate: 2026-10-28
 lang: fa
-translationKey: "introducing-the-yadli-android-app"
+translationKey: "introducing-the-khodban-android-app"
 draft: false
 tags:
-- Yadli
+- Android
+- App
 
 ---
 
-## معرفی اپلیکیشن اندرویدی یادلی
+## معرفی اپلیکیشن اندرویدی خودران
 
-یادلی یک اپ اندرویدی برای یادآوری و نگهداری‌های دوره‌ای خودرو است،
+خودران یک اپ اندرویدی برای یادآوری و نگهداری‌های دوره‌ای خودرو است،
 مقدار بنزین مصرفی، هزینه‌ها و نمایش یادآوری سرویس‌های دوره‌ای بخشی از این برنامه است. این برنامه دو زبانه ساخته شده هم فارسی و هم انگلیسی.
 
-اپ یادلی هیچ نیازی به اینترنت ندارد و بصورت آفلاین کار می‌کند، هیچ نیازی به ثبت نام و لاگین کردن ندارد. تمامی اطلاعاتی که در برنامه وارد می‌کنید در گوشی شما ذخیره می‌شود.
+اپ خودران هیچ نیازی به اینترنت ندارد و بصورت آفلاین کار می‌کند، هیچ نیازی به ثبت نام و لاگین کردن ندارد. تمامی اطلاعاتی که در برنامه وارد می‌کنید در گوشی شما ذخیره می‌شود.
 
-<img alt="yadli banner" src="https://raw.githubusercontent.com/AminNateghi/yadli-react-native/refs/heads/main/assets/yadli-banner-fa.png">
+<img alt="banner" src="https://raw.githubusercontent.com/AminNateghi/khodban/refs/heads/main/assets/banner-fa.png">
 
 
 ### امکانات
@@ -41,4 +42,4 @@ tags:
 
 ### دانلود
 
-[دانلود از گیت‌هاب](https://github.com/AminNateghi/yadli-react-native/releases/latest)
+[دانلود از گیت‌هاب](https://github.com/AminNateghi/khodban/releases/latest)
