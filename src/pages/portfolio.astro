@@ -27,13 +27,19 @@ const projectData = locale === "fa" ? DataProjectFa : DataProject;
           <p>{project.description}</p>
         </div>
 
-        {project.link?.map((link) => (
-          <a class="project-link" href={link} target="_blank" rel="noreferrer">
-            {link}
-            <IconLink />
-          </a>
-        ))}
-
+        <div class="project-link-content">
+          {project.link?.map((link) => (
+            <a
+              class="project-link"
+              href={link.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link.title}
+              <IconLink />
+            </a>
+          ))}
+        </div>
         <div class="tags">
           {project.tags?.map((tag) => (
             <div class="tag">{tag}</div>
@@ -84,6 +90,12 @@ const projectData = locale === "fa" ? DataProjectFa : DataProject;
     }
   }
 
+  .project-link-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
   .project-link {
     display: flex;
     align-items: center;
@@ -96,13 +108,7 @@ const projectData = locale === "fa" ? DataProjectFa : DataProject;
     border-radius: var(--radius-box);
     color: var(--text-active);
     font-size: 14px;
-
-    width: stretch;
-    max-width: fit-content;
     border-bottom: 1px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 
     &:hover {
       background-color: var(--color-base-100);
@@ -134,13 +140,6 @@ const projectData = locale === "fa" ? DataProjectFa : DataProject;
       &:hover {
         filter: none;
       }
-    }
-  }
-
-  html[dir="rtl"] {
-    .project-link {
-      direction: ltr !important;
-      font-family: "Noto Sans Display", sans-serif;
     }
   }
 
