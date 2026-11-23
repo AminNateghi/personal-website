@@ -81,6 +81,17 @@ const { title, description = "" } = Astro.props;
   }
 </style>
 
+<script>
+  import { animate, scrambleText } from "animejs";
+
+  const currentLocale = document.documentElement.lang;
+  animate("h2", {
+    innerHTML: scrambleText({
+      chars: currentLocale === "fa" ? "فارسیگچژپقضظشذ" : "ABCVwertasdfgh",
+    }),
+  });
+</script>
+
 <!--
 Made with ❤️ By: Amin Nateghi
 https://www.linkedin.com/in/amin-nateghi/
